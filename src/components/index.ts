@@ -1,1 +1,3 @@
-export { default as Connect } from './connect';
+export * from './TuyaWrapper';
+export * from './connect';
+export * from './svg';

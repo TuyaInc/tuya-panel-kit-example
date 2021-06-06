@@ -1,6 +1,18 @@
-// @ts-nocheck
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable @typescript-eslint/ban-types */
+/* eslint-disable react/static-property-placement */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React from 'react';
-import { View, StyleSheet, StyleProp, ViewProps, TextProps, Platform } from 'react-native';
+import {
+  View,
+  StyleSheet,
+  StyleProp,
+  ViewProps,
+  TextProps,
+  Platform,
+  ImageBackground,
+  Dimensions,
+} from 'react-native';
 import {
   TopBar,
   Notification,
@@ -134,11 +146,14 @@ class FullView extends React.Component<Props, State> {
   // 渲染 Notification
   renderNotification() {
     return (
+      // @ts-ignore
       <Notification
         onClose={() => this.setState({ showNotification: false })}
         motionConfig={{ dropHeight }}
         {...this.state.information}
+        // eslint-disable-next-line react/destructuring-assignment
         show={this.state.showNotification}
+        // eslint-disable-next-line react/destructuring-assignment
         motionStyle={[{ zIndex: 99 }, this.state.motionStyle]}
       />
     );
@@ -147,10 +162,15 @@ class FullView extends React.Component<Props, State> {
   // 渲染全局成功 Toast
   renderGlobalToast() {
     return (
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       <GlobalToast
         onFinish={() => this.setState({ showToast: false })}
+        // eslint-disable-next-line react/destructuring-assignment
         {...this.state.successInformation}
+        // eslint-disable-next-line react/destructuring-assignment
         show={this.state.showToast}
+        // eslint-disable-next-line react/destructuring-assignment
         style={[{ zIndex: 999 }, this.state.successStyle]}
       />
     );
@@ -164,6 +184,7 @@ class FullView extends React.Component<Props, State> {
         return renderTopBar();
       }
       const uiPhase = TYSdk.devInfo.uiPhase || 'release';
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       const { color } = StyleSheet.flatten(topbarTextStyle) || {
         color: '#000',
@@ -192,6 +213,8 @@ class FullView extends React.Component<Props, State> {
           title={title}
           titleStyle={topbarTextStyle}
           color={color}
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           actions={showMenu ? actions : []}
           onBack={() => this.onBack('left')}
         />
@@ -203,6 +226,7 @@ class FullView extends React.Component<Props, State> {
 
   render() {
     const { style, theme } = this.props;
+    // eslint-disable-next-line react/destructuring-assignment
     const background = this.props.background || get(theme, 'global.background', '#f8f8f8');
     const isBgColor = typeof background === 'string';
     return (
@@ -210,6 +234,7 @@ class FullView extends React.Component<Props, State> {
         {this.renderNotification()}
         {this.renderTopBar()}
         {this.renderGlobalToast()}
+        {/* eslint-disable-next-line react/destructuring-assignment */}
         {this.props.children}
         <div id="root" style={{}}>
           <MaskView />
@@ -221,7 +246,16 @@ class FullView extends React.Component<Props, State> {
 
 const Wrapper = withTheme(FullView);
 
-export default props => (
+export interface TuyaWrapperProps {
+  onBack: VoidFunction;
+  children: React.ReactNode;
+  hideTopbar?: boolean;
+  title?: string;
+}
+
+const { width, height } = Dimensions.get('window');
+
+export const TuyaWrapper = ({ onBack, children, hideTopbar, title }: TuyaWrapperProps) => (
   <ThemeProvider
     theme={{
       button: {
@@ -229,22 +263,39 @@ export default props => (
       },
     }}
   >
-    <Wrapper
+    <ImageBackground
       style={{
-        overflow: 'hidden',
-        scrollbarWidth: 'none' as const,
-        '&::-webkit-scrollbar': {
-          display: 'none',
-        },
+        width,
+        height,
       }}
-      showMenu={false}
-      background="transparent"
-      topbarStyle={{ marginTop: 20, backgroundColor: 'transparent' }}
-      topbarTextStyle={{ color: '#000' }}
-      renderTopBar={() => null}
-      onBack={() => {}}
+      resizeMode="contain"
+      source={{
+        uri:
+          'https://images.tuyacn.com/rms-static/b4573a30-8f81-11ea-acd9-833f8508c4ca-1588759782739.png?tykey=iphone.png',
+      }}
     >
-      {props.children}
-    </Wrapper>
+      <Wrapper
+        style={{
+          // @ts-ignore
+          overflow: 'hidden',
+          scrollbarWidth: 'none' as const,
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
+          width,
+          height,
+        }}
+        title={title}
+        showMenu={false}
+        background="transparent"
+        // @ts-ignore
+        topbarStyle={{ backgroundColor: 'transparent' }}
+        renderTopBar={null}
+        hideTopbar={hideTopbar}
+        onBack={onBack}
+      >
+        {children}
+      </Wrapper>
+    </ImageBackground>
   </ThemeProvider>
 );

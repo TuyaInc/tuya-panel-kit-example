@@ -19,6 +19,7 @@ module.exports = {
           ['@models', path.resolve(__dirname, './src/models')],
           ['@res', path.resolve(__dirname, './src/res')],
           ['@utils', path.resolve(__dirname, './src/utils')],
+          ['@modules', path.resolve(__dirname, './src/modules')],
         ],
         extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
       },

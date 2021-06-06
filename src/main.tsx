@@ -1,9 +1,11 @@
 import React from 'react';
-import { createNavigator, GlobalTheme, NavigationRoute } from 'tuya-panel-kit';
 import { StatusBar } from 'react-native';
+import { createNavigator, GlobalTheme, NavigationRoute } from 'tuya-panel-kit';
+
 import composeLayout from './composeLayout';
 import { store } from './models';
-import Home from './native-pages';
+import Home from './pages/index';
+import { routes } from './routes';
 
 console.disableYellowBox = true;
 
@@ -16,6 +18,14 @@ const router: NavigationRoute[] = [
       renderStatusBar: () => <StatusBar barStyle="default" />,
     },
   },
+  ...routes.map(route => ({
+    name: route.href,
+    component: route.component,
+    options: {
+      title: route.name,
+      renderStatusBar: () => <StatusBar barStyle="default" />,
+    },
+  })),
 ];
 
 interface Props {

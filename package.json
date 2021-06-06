@@ -1,5 +1,7 @@
 {
-  "rnVersion": "5.28",
+  "rnVersion": [
+    "5.28"
+  ],
   "license": "MIT",
   "name": "basic-ts-navigation",
   "pid": [],
@@ -30,6 +32,7 @@
     "react": "16.8.3",
     "react-addons-shallow-compare": "^15.6.2",
     "react-native": "0.59.10",
+    "react-native-gesture-handler": "^1.10.3",
     "react-native-svg": "^12.1.1",
     "react-native-web": "^0.16.3",
     "react-redux": "^7.2.1",
@@ -41,12 +44,11 @@
     "rxjs": "^6.3.1",
     "rxjs-compat": "^6.3.1",
     "style-equal": "^1.0.0",
-    "tuya-panel-kit": "^4.5.0",
+    "tuya-panel-kit": "^4.5.5",
     "tuya-panel-kit-web": "^4.2.19"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.12.1",
-    "@babel/preset-react": "^7.13.13",
     "@commitlint/cli": "^11.0.0",
     "@tuya-smart/tuya-panel-patches": "^0.59.10",
     "@types/lodash": "^4.14.137",
