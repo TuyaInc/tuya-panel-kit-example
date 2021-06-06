@@ -1,7 +1,8 @@
 import React from 'react';
-import { View } from 'react-native';
 
 import { useNavigation } from '@react-navigation/core';
+
+import PageHome from './home';
 
 const HomePage: React.FC = () => {
   const navigation = useNavigation();
@@ -10,7 +11,7 @@ const HomePage: React.FC = () => {
     navigation.navigate(componentName);
   };
 
-  return <View>home</View>;
+  return <PageHome navigate={goto} />;
 };
 
 export default HomePage;

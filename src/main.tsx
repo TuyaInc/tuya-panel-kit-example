@@ -4,7 +4,7 @@ import { createNavigator, GlobalTheme, NavigationRoute } from 'tuya-panel-kit';
 
 import composeLayout from './composeLayout';
 import { store } from './models';
-import Home from './pages/index';
+import Home from './pages/panel-index';
 import { routes } from './routes';
 
 console.disableYellowBox = true;
