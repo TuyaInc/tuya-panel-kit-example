@@ -1,7 +1,10 @@
 import { Svg } from '@components';
 import React from 'react';
 import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Utils } from 'tuya-panel-kit';
 import { routes } from '../routes';
+
+const { convertX } = Utils.RatioUtils;
 
 export interface PageHomeProps {
   navigate: (componentName: string) => void;
@@ -45,27 +48,27 @@ const styles = StyleSheet.create({
   head: {
     display: 'flex',
     alignItems: 'center',
-    paddingTop: 100,
-    paddingBottom: 44,
+    paddingTop: convertX(100),
+    paddingBottom: convertX(44),
   },
   head_logo: {
-    width: 98,
-    height: 49,
+    width: convertX(98),
+    height: convertX(49),
     resizeMode: 'contain',
   },
   head_title: {
-    fontSize: 16,
-    marginTop: 16,
+    fontSize: convertX(16),
+    marginTop: convertX(16),
   },
   list: {
-    paddingHorizontal: 24,
+    paddingHorizontal: convertX(24),
   },
   list_item: {
-    height: 58,
+    height: convertX(58),
     backgroundColor: '#F5F5F5',
-    borderRadius: 8,
-    marginBottom: 8,
-    paddingHorizontal: 16,
+    borderRadius: convertX(8),
+    marginBottom: convertX(8),
+    paddingHorizontal: convertX(16),
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
