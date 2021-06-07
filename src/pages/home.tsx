@@ -1,9 +1,10 @@
 import React from 'react';
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Utils } from 'tuya-panel-kit';
 
 import { Svg } from '@components';
 
+import { ScrollView } from 'react-native-gesture-handler';
 import { routes } from '../routes';
 
 const { convertX } = Utils.RatioUtils;
@@ -17,32 +18,34 @@ export const PageHome: React.FC<PageHomeProps> = ({ navigate }) => {
     navigate(href);
   };
   return (
-    <View>
-      <View style={styles.head}>
-        <Image
-          style={styles.head_logo}
-          source={{
-            uri:
-              'https://images.tuyacn.com/rms-static/3dec3ee0-b3d9-11eb-9adb-1b12f902f79d-1620903119310.png?tyName=210513tuya.png',
-          }}
-        />
-        <Text style={styles.head_title}>Tuya Design</Text>
-      </View>
-      <View style={styles.list}>
-        {routes.map(item => (
-          <TouchableOpacity
-            key={item.name}
-            style={styles.list_item}
-            onPress={() => {
-              goto(item.href);
+    <SafeAreaView style={{ flex: 1 }}>
+      <ScrollView contentContainerStyle={{ paddingBottom: convertX(50) }}>
+        <View style={styles.head}>
+          <Image
+            style={styles.head_logo}
+            source={{
+              uri:
+                'https://images.tuyacn.com/rms-static/3dec3ee0-b3d9-11eb-9adb-1b12f902f79d-1620903119310.png?tyName=210513tuya.png',
             }}
-          >
-            {item.name}
-            {Svg.right}
-          </TouchableOpacity>
-        ))}
-      </View>
-    </View>
+          />
+          <Text style={styles.head_title}>Tuya Design</Text>
+        </View>
+        <View style={styles.list}>
+          {routes.map(item => (
+            <TouchableOpacity
+              key={item.name}
+              style={styles.list_item}
+              onPress={() => {
+                goto(item.href);
+              }}
+            >
+              {item.name}
+              {Svg.right}
+            </TouchableOpacity>
+          ))}
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 

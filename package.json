@@ -36,6 +36,7 @@
     "react-addons-shallow-compare": "^15.6.2",
     "react-native": "0.59.10",
     "react-native-gesture-handler": "^1.10.3",
+    "react-native-safe-area-view": "^1.1.1",
     "react-native-svg": "^12.1.1",
     "react-native-web": "^0.16.3",
     "react-redux": "^7.2.1",
@@ -47,12 +48,12 @@
     "rxjs": "^6.3.1",
     "rxjs-compat": "^6.3.1",
     "style-equal": "^1.0.0",
-    "tuya-panel-kit": "^4.5.5",
-    "tuya-panel-kit-web": "^4.2.19"
+    "tuya-panel-kit": "^4.5.5"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.12.1",
     "@commitlint/cli": "^11.0.0",
+    "@tuya-rn/umi-plugin-tuya-panel-kit": "^0.4.0",
     "@tuya-smart/tuya-panel-patches": "^0.59.10",
     "@types/lodash": "^4.14.137",
     "@types/node": "^15.12.0",

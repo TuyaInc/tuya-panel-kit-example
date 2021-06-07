@@ -18,7 +18,7 @@ export default ({ children }) => {
       title={title}
       hideTopbar={isHome}
       onBack={() => {
-        push('/getting-started');
+        push('/');
       }}
     >
       {children}

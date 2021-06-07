@@ -4,10 +4,21 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import React from 'react';
 import {
-    Dimensions, Platform, StyleProp, StyleSheet, TextProps, View, ViewProps
+  Dimensions,
+  Platform,
+  StyleProp,
+  StyleSheet,
+  TextProps,
+  View,
+  ViewProps,
 } from 'react-native';
 import {
-    GlobalToast, Notification, Theme as ThemeProvider, TopBar, TYSdk, Utils
+  GlobalToast,
+  Notification,
+  Theme as ThemeProvider,
+  TopBar,
+  TYSdk,
+  Utils,
 } from 'tuya-panel-kit';
 import MaskView from 'tuya-panel-kit/lib/components/modal/portalOut';
 

@@ -8,7 +8,7 @@ export const usePostedPush = () => {
     top.postMessage(
       {
         method: 'navigate',
-        href: `/docs${href}`,
+        href: `/docs${href === '/' ? '/getting-started' : href}`,
       },
       '*'
     );
