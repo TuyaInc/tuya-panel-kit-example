@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Utils } from 'tuya-panel-kit';
 
 import { ListView } from '@components';
+import Strings from '@i18n';
 
 const { convertX } = Utils.RatioUtils;
 
@@ -10,23 +11,23 @@ export default () => {
     <ListView
       list={[
         {
-          title: '纯文本按钮',
-          content: <Button text="点我一下" />,
+          title: Strings.getLang('pure_text_button'),
+          content: <Button text={Strings.getLang('click_me_once')} />,
         },
         {
-          title: '纯icon按钮',
+          title: Strings.getLang('pure_icon_button'),
           content: <Button icon="power" />,
         },
         {
-          title: '带icon的文字按钮',
+          title: Strings.getLang('with_text_icon_button'),
           content: (
             <>
-              <Button icon="selected" iconSize={24} text="文字" />
+              <Button icon="selected" iconSize={24} text={Strings.getLang('text')} />
               <Button
                 icon="selected"
                 textDirection="right"
                 iconSize={24}
-                text="文字"
+                text={Strings.getLang('text')}
                 style={{
                   marginLeft: convertX(27),
                 }}

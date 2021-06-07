@@ -1,10 +1,11 @@
 import Strings from '@i18n';
+
 import Button from './pages/basic/button';
-import SwitchButton from './pages/data-entry/switch-button';
-import Stepper from './pages/data-entry/stepper';
 import Slider from './pages/data-entry/slider';
-import ToastView from './pages/feedback/toast-view';
+import Stepper from './pages/data-entry/stepper';
+import SwitchButton from './pages/data-entry/switch-button';
 import Dialog from './pages/feedback/dialog';
+import ToastView from './pages/feedback/toast-view';
 
 export const routes = [
   {

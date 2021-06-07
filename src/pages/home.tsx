@@ -1,18 +1,20 @@
-import { Svg } from '@components';
 import React from 'react';
-import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Utils } from 'tuya-panel-kit';
+
+import { Svg } from '@components';
+
 import { routes } from '../routes';
 
 const { convertX } = Utils.RatioUtils;
 
 export interface PageHomeProps {
-  navigate: (componentName: string) => void;
+  navigate: (href: string) => void;
 }
 
 export const PageHome: React.FC<PageHomeProps> = ({ navigate }) => {
-  const goto = (componentName: string) => {
-    navigate(componentName);
+  const goto = (href: string) => {
+    navigate(href);
   };
   return (
     <View>

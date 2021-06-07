@@ -1,11 +1,12 @@
 import _ from 'lodash';
-import { Store } from 'redux';
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { TYSdk, Theme, DevInfo, DpValue } from 'tuya-panel-kit';
+import { Store } from 'redux';
+import { DevInfo, DpValue, Theme, TYSdk } from 'tuya-panel-kit';
+
 import { Connect } from '@components';
-import { actions } from '@models';
 import { theme } from '@config';
+import { actions } from '@models';
 
 interface Props {
   devInfo: DevInfo;

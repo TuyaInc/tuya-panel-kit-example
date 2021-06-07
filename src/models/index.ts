@@ -1,7 +1,8 @@
-import { useSelector as useSelectorBase, shallowEqual } from 'react-redux';
-import { actions as CommonActions } from './modules/common';
+import { shallowEqual, useSelector as useSelectorBase } from 'react-redux';
+
 import { ReduxState } from './combine';
 import configureStore from './configureStore';
+import { actions as CommonActions } from './modules/common';
 
 export * from './combine';
 export * from './configureStore';

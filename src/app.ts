@@ -1,5 +1,6 @@
-import Strings from '@i18n';
 import qs from 'qs';
+
+import Strings from '@i18n';
 
 export const locale = {
   getLocale() {

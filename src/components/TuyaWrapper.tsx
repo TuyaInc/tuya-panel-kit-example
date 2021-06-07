@@ -4,22 +4,10 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import React from 'react';
 import {
-  View,
-  StyleSheet,
-  StyleProp,
-  ViewProps,
-  TextProps,
-  Platform,
-  ImageBackground,
-  Dimensions,
+    Dimensions, Platform, StyleProp, StyleSheet, TextProps, View, ViewProps
 } from 'react-native';
 import {
-  TopBar,
-  Notification,
-  GlobalToast,
-  TYSdk,
-  Utils,
-  Theme as ThemeProvider,
+    GlobalToast, Notification, Theme as ThemeProvider, TopBar, TYSdk, Utils
 } from 'tuya-panel-kit';
 import MaskView from 'tuya-panel-kit/lib/components/modal/portalOut';
 
@@ -263,39 +251,27 @@ export const TuyaWrapper = ({ onBack, children, hideTopbar, title }: TuyaWrapper
       },
     }}
   >
-    <ImageBackground
+    <Wrapper
       style={{
+        // @ts-ignore
+        overflow: 'hidden',
+        scrollbarWidth: 'none' as const,
+        '&::-webkit-scrollbar': {
+          display: 'none',
+        },
         width,
         height,
       }}
-      resizeMode="contain"
-      source={{
-        uri:
-          'https://images.tuyacn.com/rms-static/b4573a30-8f81-11ea-acd9-833f8508c4ca-1588759782739.png?tykey=iphone.png',
-      }}
+      title={title}
+      showMenu={false}
+      background="transparent"
+      // @ts-ignore
+      topbarStyle={{ backgroundColor: 'transparent' }}
+      renderTopBar={null}
+      hideTopbar={hideTopbar}
+      onBack={onBack}
     >
-      <Wrapper
-        style={{
-          // @ts-ignore
-          overflow: 'hidden',
-          scrollbarWidth: 'none' as const,
-          '&::-webkit-scrollbar': {
-            display: 'none',
-          },
-          width,
-          height,
-        }}
-        title={title}
-        showMenu={false}
-        background="transparent"
-        // @ts-ignore
-        topbarStyle={{ backgroundColor: 'transparent' }}
-        renderTopBar={null}
-        hideTopbar={hideTopbar}
-        onBack={onBack}
-      >
-        {children}
-      </Wrapper>
-    </ImageBackground>
+      {children}
+    </Wrapper>
   </ThemeProvider>
 );

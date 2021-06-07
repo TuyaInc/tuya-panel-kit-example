@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import { combineEpics } from 'redux-observable';
-import { reducers as commonReducers, epics as commonEpics } from './modules/common';
+
+import { epics as commonEpics, reducers as commonReducers } from './modules/common';
 
 export const reducers = {
   ...commonReducers,

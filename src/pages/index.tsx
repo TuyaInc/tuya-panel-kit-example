@@ -1,16 +1,13 @@
 import React from 'react';
-import { useHistory } from 'umi';
+
+import { usePostedPush } from '@hooks';
 
 import PageHome from './home';
 
 const HomePage: React.FC = () => {
-  const history = useHistory();
+  const push = usePostedPush();
 
-  const goto = (componentName: string) => {
-    history.push(componentName);
-  };
-
-  return <PageHome navigate={goto} />;
+  return <PageHome navigate={push} />;
 };
 
 export default HomePage;

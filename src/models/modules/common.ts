@@ -1,7 +1,3 @@
-import { TYSdk, DevInfo, DpValue } from 'tuya-panel-kit';
-import { handleActions, createAction } from 'redux-actions';
-import { Observable } from 'rxjs/Observable';
-import { ActionsObservable } from 'redux-observable';
 import 'rxjs/add/observable/fromPromise';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/observable/merge';
@@ -9,6 +5,11 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
 import 'rxjs/add/operator/partition';
+
+import { createAction, handleActions } from 'redux-actions';
+import { ActionsObservable } from 'redux-observable';
+import { Observable } from 'rxjs/Observable';
+import { DevInfo, DpValue, TYSdk } from 'tuya-panel-kit';
 
 const { putDeviceData } = TYSdk.device;
 
