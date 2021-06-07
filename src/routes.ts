@@ -1,3 +1,4 @@
+import Strings from '@i18n';
 import Button from './pages/basic/button';
 import SwitchButton from './pages/data-entry/switch-button';
 import Stepper from './pages/data-entry/stepper';
@@ -7,7 +8,7 @@ import Dialog from './pages/feedback/dialog';
 
 export const routes = [
   {
-    name: 'Button 按钮',
+    name: Strings.getLang('button'),
     href: '/basic/button',
     component: Button,
   },

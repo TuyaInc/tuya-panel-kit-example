@@ -1,4 +1,6 @@
-import { I18N } from 'tuya-panel-kit';
-import Strings from './strings';
+import { I18N, Strings as CoreStrings } from 'tuya-panel-kit';
+import StringsConfig from './strings';
 
-export default new I18N(Strings);
+export const Strings = (new I18N(StringsConfig) as any) as typeof CoreStrings;
+
+export default Strings;
