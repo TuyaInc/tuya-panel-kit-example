@@ -9,7 +9,6 @@ export default () => {
   const [errorShow, setErrorShow] = React.useState(false);
   const [loadingShow, setLoadingShow] = React.useState(false);
   const [show, setShow] = React.useState(false);
-  console.log('successShow,', successShow);
   return (
     <>
       <BlockView

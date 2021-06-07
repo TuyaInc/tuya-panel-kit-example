@@ -3,6 +3,7 @@ import SwitchButton from './pages/data-entry/switch-button';
 import Stepper from './pages/data-entry/stepper';
 import Slider from './pages/data-entry/slider';
 import ToastView from './pages/feedback/toast-view';
+import Dialog from './pages/feedback/dialog';
 
 export const routes = [
   {
@@ -29,5 +30,10 @@ export const routes = [
     name: 'ToastView 吐司',
     href: '/feedback/toast-view',
     component: ToastView,
+  },
+  {
+    name: 'Dialog 对话框',
+    href: '/feedback/dialog',
+    component: Dialog,
   },
 ];

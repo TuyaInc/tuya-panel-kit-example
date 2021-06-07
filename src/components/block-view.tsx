@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, TouchableOpacity, View } from 'react-native';
 import { TYText, Utils } from 'tuya-panel-kit';
 
 const { convertX: cx } = Utils.RatioUtils;
@@ -13,6 +13,44 @@ type ListItem = {
   }[];
 };
 
+export interface BlockListProps {
+  list: ListItem['list'];
+  nowrap?: boolean;
+}
+
+export const BlockList = ({ list, nowrap = false }: BlockListProps) => {
+  const content = (
+    <View style={styles.block_list}>
+      {list.map((subItem, i) => {
+        const inner = (
+          <>
+            <TYText style={styles.item_name}>{subItem.name}</TYText>
+            {subItem.component}
+          </>
+        );
+        return (
+          <>
+            {i > 0 && <View style={styles.item_before} />}
+            {subItem?.onPress ? (
+              <TouchableOpacity style={styles.item} onPress={subItem?.onPress} key={subItem.name}>
+                {inner}
+              </TouchableOpacity>
+            ) : (
+              <View style={styles.item} key={subItem.name}>
+                {inner}
+              </View>
+            )}
+          </>
+        );
+      })}
+    </View>
+  );
+  if (nowrap) {
+    return content;
+  }
+  return <View style={[styles.container, { paddingTop: cx(12) }]}>{content}</View>;
+};
+
 export const BlockView = ({ list }: { list: ListItem[] }) => {
   return (
     <View style={styles.container}>
@@ -20,32 +58,7 @@ export const BlockView = ({ list }: { list: ListItem[] }) => {
         <View style={styles.block} key={item.title}>
           <TYText style={styles.block_title}>{item.title}</TYText>
           <View style={styles.block_list}>
-            {item.list.map((subItem, i) => {
-              const inner = (
-                <>
-                  <TYText style={styles.item_name}>{subItem.name}</TYText>
-                  {subItem.component}
-                </>
-              );
-              return (
-                <>
-                  {i > 0 && <View style={styles.item_before} />}
-                  {subItem?.onPress ? (
-                    <TouchableOpacity
-                      style={styles.item}
-                      onPress={subItem?.onPress}
-                      key={subItem.name}
-                    >
-                      {inner}
-                    </TouchableOpacity>
-                  ) : (
-                    <View style={styles.item} key={subItem.name}>
-                      {inner}
-                    </View>
-                  )}
-                </>
-              );
-            })}
+            <BlockList nowrap={true} list={item.list} />
           </View>
         </View>
       ))}

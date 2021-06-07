@@ -29,7 +29,8 @@
       "@models": ["./models"],
       "@res": ["./res"],
       "@modules": ["./modules"],
-      "@utils": ["./utils"]
+      "@utils": ["./utils"],
+      "@hooks": ["./hooks"],
     }
   },
   "exclude": [

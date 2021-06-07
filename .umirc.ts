@@ -12,6 +12,7 @@ export default defineConfig({
     ...flatDep.reduce((acc, dep) => ({ ...acc, [dep]: join(__dirname, `node_modules`, dep) }), {}),
     "@modules": join(__dirname, "./src/modules"),
     "@components": join(__dirname, "./src/components"),
+    "@hooks": join(__dirname, "./src/hooks"),
   },
   fastRefresh: {},
 });
