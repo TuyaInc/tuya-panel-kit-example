@@ -1,9 +1,9 @@
 import React from 'react';
+import { View } from 'react-native';
 import { TYText } from 'tuya-panel-kit';
 
 import { ListView } from '@components';
 import Strings from '@i18n';
-import { View } from 'react-native';
 
 export default () => {
   return (

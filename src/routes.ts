@@ -6,12 +6,15 @@ import Button from './pages/basic/button';
 import Iconfont from './pages/basic/icon-font';
 import Motion from './pages/basic/motion';
 import TYText from './pages/basic/tytext';
-
+import UnitText from './pages/basic/unit-text';
 // data-entry
+import Checkbox from './pages/data-entry/checkbox';
+import DatePicker from './pages/data-entry/date-picker';
+import PickerView from './pages/data-entry/picker-view';
 import Slider from './pages/data-entry/slider';
 import Stepper from './pages/data-entry/stepper';
 import SwitchButton from './pages/data-entry/switch-button';
-
+import TimerPicker from './pages/data-entry/timer-picker';
 // feedback
 import Dialog from './pages/feedback/dialog';
 import ToastView from './pages/feedback/toast-view';
@@ -43,21 +46,46 @@ export const routes = [
     href: '/basic/tytext',
     component: TYText,
   },
+  {
+    name: Strings.getLang('unittext'),
+    href: '/basic/unit-text',
+    component: UnitText,
+  },
   // data-entry
   {
-    name: 'SwitchButton 开关',
-    href: '/data-entry/switch-button',
-    component: SwitchButton,
+    name: Strings.getLang('checkbox'),
+    href: '/data-entry/checkbox',
+    component: Checkbox,
   },
   {
-    name: 'Stepper 步进器',
+    name: Strings.getLang('datepicker'),
+    href: '/data-entry/date-picker',
+    component: DatePicker,
+  },
+  {
+    name: Strings.getLang('pickerview'),
+    href: '/data-entry/picker-view',
+    component: PickerView,
+  },
+  {
+    name: Strings.getLang('slider'),
+    href: '/data-entry/slider',
+    component: Slider,
+  },
+  {
+    name: Strings.getLang('stepper'),
     href: '/data-entry/stepper',
     component: Stepper,
   },
   {
-    name: 'Slider 滑动选择器',
-    href: '/data-entry/slider',
-    component: Slider,
+    name: Strings.getLang('switchbutton'),
+    href: '/data-entry/switch-button',
+    component: SwitchButton,
+  },
+  {
+    name: Strings.getLang('timepicker'),
+    href: '/data-entry/timer-picker',
+    component: TimerPicker,
   },
   {
     name: 'ToastView 吐司',

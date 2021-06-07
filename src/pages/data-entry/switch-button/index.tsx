@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import { SwitchButton } from 'tuya-panel-kit';
 
 import { ListView } from '@components';
+import Strings from '@i18n';
 
 export default () => {
   const [value1, setValue1] = React.useState(true);
@@ -11,7 +12,7 @@ export default () => {
     <ListView
       list={[
         {
-          title: '基础样式一',
+          title: Strings.getLang('switchbutton_style1'),
           content: (
             <View style={{ display: 'flex', flexDirection: 'row' }}>
               <SwitchButton
@@ -24,7 +25,7 @@ export default () => {
           ),
         },
         {
-          title: '基础样式二',
+          title: Strings.getLang('switchbutton_style2'),
           content: (
             <View style={{ display: 'flex', flexDirection: 'row' }}>
               <SwitchButton
@@ -44,7 +45,7 @@ export default () => {
           ),
         },
         {
-          title: '深色模式',
+          title: Strings.getLang('switchbutton_style_dark'),
           content: (
             <View style={{ display: 'flex', flexDirection: 'row' }}>
               <SwitchButton
@@ -62,7 +63,7 @@ export default () => {
           ),
         },
         {
-          title: '渐变样式',
+          title: Strings.getLang('switchbutton_style_gradient'),
           content: (
             <View style={{ display: 'flex', flexDirection: 'row' }}>
               <SwitchButton
@@ -92,7 +93,7 @@ export default () => {
           ),
         },
         {
-          title: '文本样式',
+          title: Strings.getLang('switchbutton_style_text'),
           content: (
             <View style={{ display: 'flex', flexDirection: 'row' }}>
               <SwitchButton
@@ -118,7 +119,7 @@ export default () => {
           ),
         },
         {
-          title: '非受控开关',
+          title: Strings.getLang('switchbutton_style_uncontrol'),
           content: (
             <View style={{ display: 'flex', flexDirection: 'row' }}>
               <SwitchButton

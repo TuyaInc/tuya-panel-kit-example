@@ -32,6 +32,51 @@ export default {
     unittext_style: 'Basic style',
     unittext_size: 'Custom size',
     unittext_color: 'Customize the color of each value of UnitText',
+
+    // data-entry
+    // checkbox
+    checkbox: 'Checkbox',
+    checkbox_basic: 'Basic Usage',
+    checkbox_disable: 'Disable status',
+    checkbox_color: 'Custom color and size',
+    checkbox_position: 'Flip icon and child element position',
+    // date-picker
+    datepicker: 'DatePicker',
+    datepicker_control: 'Controlled date picker',
+    datepicker_uncontrol: 'Uncontrolled date picker',
+    // picker-view
+    pickerview: 'PickerView',
+    pickerview_basic: 'Basic Usage',
+    pickerview_mul: 'Multiple column selector',
+    // slider
+    slider: 'Slider',
+    slider_basic: 'Horizontal slider - basic style',
+    slider_custom: 'Horizontal slider - custom button',
+    silder_vertical: 'Vertical slider',
+    // stepper
+    stepper: 'Stepper',
+    stepper_style1: 'Style 1',
+    stepper_style1_def: 'Default usage',
+    stepper_style1_disable: 'Disable style',
+    stepper_style1_point: 'Decimal point style',
+    stepper_style1_input: 'Input state',
+    stepper_style2: 'Style 2',
+    stepper_style2_def: 'Default usage',
+    stepper_style2_disable: 'Disable style',
+    stepper_style2_point: 'Decimal point style',
+    stepper_style2_input: 'Input state',
+    // switch-button
+    switchbutton: 'SwitchButton',
+    switchbutton_style1: 'Basic style 1',
+    switchbutton_style2: 'Basic style 2',
+    switchbutton_style_dark: 'Dark mode',
+    switchbutton_style_gradient: 'Gradient style',
+    switchbutton_style_text: 'Text style',
+    switchbutton_style_uncontrol: 'Uncontrolled switch',
+    // time-picker
+    timepicker: 'TimerPicker',
+    timepicker_basic: 'Basic use of time period selector',
+    timepicker_prefix: 'Time period selector with prefix position',
   },
   zh: {
     // basic
@@ -66,5 +111,50 @@ export default {
     unittext_style: '基本样式',
     unittext_size: '自定义大小',
     unittext_color: '自定义 UnitText 每个值的颜色',
+
+    // data-entry
+    // checkbox
+    checkbox: 'Checkbox 选择框',
+    checkbox_basic: '基础使用',
+    checkbox_disable: '禁用状态',
+    checkbox_color: '自定义颜色和大小',
+    checkbox_position: '翻转图标和子元素位置',
+    // date-picker
+    datepicker: 'DatePicker 日期选择器',
+    datepicker_control: '受控日期选择器',
+    datepicker_uncontrol: '非受控日期选择器',
+    // picker-view
+    pickerview: 'PickerView 选择器',
+    pickerview_basic: '基础选择器',
+    pickerview_mul: '多列选择器',
+    // slider
+    slider: 'Slider 滑动选择器',
+    slider_basic: '水平滑动条 - 基础样式',
+    slider_custom: '水平滑动条 - 自定义按钮',
+    silder_vertical: '竖直滑动条',
+    // stepper
+    stepper: 'Stepper 步进器',
+    stepper_style1: '风格一',
+    stepper_style1_def: '默认用法',
+    stepper_style1_disable: '禁用样式',
+    stepper_style1_point: '小数点样式',
+    stepper_style1_input: '可输入状态',
+    stepper_style2: '风格二',
+    stepper_style2_def: '默认用法',
+    stepper_style2_disable: '禁用样式',
+    stepper_style2_point: '小数点样式',
+    stepper_style2_input: '可输入状态',
+    // switch-button
+    switchbutton: 'SwitchButton 开关',
+    switchbutton_style1: '基础样式一',
+    switchbutton_style2: '基础样式二',
+    switchbutton_style_dark: '深色模式',
+    switchbutton_style_gradient: '渐变样式',
+    switchbutton_style_text: '文本样式',
+    switchbutton_style_uncontrol: '非受控开关',
+    // time-picker
+    timepicker: 'TimerPicker 时间段选择器',
+    timepicker_basic: '时间段选择器基础使用',
+    timepicker_prefix: '时间段选择器配合前缀位置',
   },
 };

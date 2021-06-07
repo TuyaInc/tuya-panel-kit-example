@@ -3,15 +3,15 @@ import { View } from 'react-native';
 import { Slider, TYText } from 'tuya-panel-kit';
 
 import { ListView } from '@components';
+import Strings from '@i18n';
 
 export default () => {
   const [value, setValue] = React.useState(20);
-
   return (
     <ListView
       list={[
         {
-          title: '水平滑动条 - 基础样式',
+          title: Strings.getLang('slider_basic'),
           content: (
             <View style={{ display: 'flex', flexDirection: 'row' }}>
               <Slider.Horizontal
@@ -27,7 +27,7 @@ export default () => {
           ),
         },
         {
-          title: '水平滑动条 - 自定义按钮',
+          title: Strings.getLang('slider_custom'),
           content: (
             <View style={{ display: 'flex', flexDirection: 'row' }}>
               <Slider.Horizontal
@@ -57,7 +57,7 @@ export default () => {
           ),
         },
         {
-          title: '竖直滑动条',
+          title: Strings.getLang('silder_vertical'),
           content: (
             <View style={{ display: 'flex', flexDirection: 'row' }}>
               <Slider.Vertical

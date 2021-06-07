@@ -1,7 +1,7 @@
 import { defineConfig } from 'umi';
 import { join } from 'path'
 
-const flatDep = ['react-native-gesture-handler','react-native-svg']
+const flatDep = ['react-native-gesture-handler', 'react-native-svg']
 
 export default defineConfig({
   nodeModulesTransform: {
@@ -16,6 +16,7 @@ export default defineConfig({
     "@components": join(__dirname, "./src/components"),
     "@hooks": join(__dirname, "./src/hooks"),
     "@i18n": join(__dirname, "./src/i18n"),
+    '../picker-view': '../picker-view/index.web.js'
   },
   fastRefresh: {},
 });

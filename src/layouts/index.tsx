@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { SafeAreaView, ScrollView } from 'react-native';
 import { useLocation } from 'umi';
 
 import { usePostedPush } from '@hooks';
@@ -21,7 +22,11 @@ export default ({ children }) => {
         push('/');
       }}
     >
-      {children}
+      <SafeAreaView style={{ flex: 1 }}>
+        <ScrollView key={location.pathname} contentContainerStyle={{ flex: 1 }}>
+          {children}
+        </ScrollView>
+      </SafeAreaView>
     </TuyaWrapper>
   );
 };
