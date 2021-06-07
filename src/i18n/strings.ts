@@ -28,6 +28,10 @@ export default {
     tytext: 'TYText',
     tytext_basic_style: 'Basic style',
     tytext_size_type: 'Use with size and type',
+    unittext: 'UnitText',
+    unittext_style: 'Basic style',
+    unittext_size: 'Custom size',
+    unittext_color: 'Customize the color of each value of UnitText',
   },
   zh: {
     // basic
@@ -58,5 +62,9 @@ export default {
     tytext: 'TYText 文字',
     tytext_basic_style: '基本样式',
     tytext_size_type: '搭配 size 和 type 使用',
+    unittext: 'UnitText 字体单位',
+    unittext_style: '基本样式',
+    unittext_size: '自定义大小',
+    unittext_color: '自定义 UnitText 每个值的颜色',
   },
 };
