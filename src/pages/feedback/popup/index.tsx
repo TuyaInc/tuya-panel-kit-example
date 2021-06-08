@@ -1,10 +1,10 @@
 import React from 'react';
+import { Text, View } from 'react-native';
 import { Popup } from 'tuya-panel-kit';
 
 import { BlockList, Svg } from '@components';
 import { useSetParticalState } from '@hooks';
 import Strings from '@i18n';
-import { Text, View } from 'react-native';
 
 export default () => {
   const [state, setState] = useSetParticalState({

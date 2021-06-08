@@ -152,6 +152,14 @@ export default {
     swipeout_right: 'Slide right',
     swipeout_right_content: 'Try sliding right',
     swipeout_disable: 'Disable sideslip',
+    // tips
+    tips: 'Tips',
+    tips_top_left: 'Bubble - top left',
+    tips_top_mid: 'Bubble - top center',
+    tips_top_right: 'Bubble - top right',
+    tips_bottom_left: 'Bubble -bottom left',
+    tips_bottom_mid: 'Bubble -bottom center',
+    tips_bottom_right: 'Bubble -bottom right',
   },
   zh: {
     // common
@@ -306,5 +314,13 @@ export default {
     swipeout_right: '右侧滑',
     swipeout_right_content: '试试右滑',
     swipeout_disable: '禁用侧滑',
+    // tips
+    tips: 'Tips',
+    tips_top_left: '气泡 - 上左',
+    tips_top_mid: '气泡 - 上中',
+    tips_top_right: '气泡 - 上右',
+    tips_bottom_left: '气泡 - 下左',
+    tips_bottom_mid: '气泡 - 下中',
+    tips_bottom_right: '气泡 - 下右',
   },
 };

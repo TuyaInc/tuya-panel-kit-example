@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dialog, GlobalToast } from 'tuya-panel-kit';
+import { GlobalToast } from 'tuya-panel-kit';
 
 import { BlockList, Svg } from '@components';
 import Strings from '@i18n';
