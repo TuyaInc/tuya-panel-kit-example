@@ -7,6 +7,8 @@ import Strings from '@i18n';
 export default () => {
   return (
     <ListView
+      contentPadding={false}
+      contentCenter={true}
       list={[
         {
           title: Strings.getLang('brick_button_text'),
