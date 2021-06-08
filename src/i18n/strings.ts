@@ -372,7 +372,7 @@ export default {
     swipeout_right_content: '试试右滑',
     swipeout_disable: '禁用侧滑',
     // tips
-    tips: 'Tips',
+    tips: 'Tips 气泡',
     tips_top_left: '气泡 - 上左',
     tips_top_mid: '气泡 - 上中',
     tips_top_right: '气泡 - 上右',
@@ -395,7 +395,7 @@ export default {
 
     // navigation
     // controllerbar
-    controllerbar: 'ControllerBar',
+    controllerbar: 'ControllerBar 底部栏',
     controllerbar_basic: '基础底部栏',
     controllerbar_base: 'ControllerBar.Group base 版',
     controllerbar_swiper: 'ControllerBar.Group Swiper 版',

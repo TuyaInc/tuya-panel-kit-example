@@ -4,6 +4,7 @@ import { join } from 'path'
 const flatDep = ['react-native-gesture-handler', 'react-native-svg']
 
 export default defineConfig({
+  history: { type: 'hash' },
   nodeModulesTransform: {
     type: 'all',
   },
