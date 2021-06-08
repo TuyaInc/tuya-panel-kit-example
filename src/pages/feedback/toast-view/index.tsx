@@ -2,6 +2,7 @@ import React from 'react';
 import { Toast } from 'tuya-panel-kit';
 
 import { BlockView, Svg } from '@components';
+import Strings from '@i18n';
 
 export default () => {
   const [successShow, setSuccessShow] = React.useState(false);
@@ -14,35 +15,35 @@ export default () => {
       <BlockView
         list={[
           {
-            title: '带icon样式',
+            title: Strings.getLang('toastview'),
             list: [
               {
-                name: '成功提示',
+                name: Strings.getLang('toastview_hasicon_success'),
                 onPress: () => setSuccessShow(true),
                 component: <>{Svg.right}</>,
               },
               {
-                name: '警示提示',
+                name: Strings.getLang('toastview_hasicon_warn'),
                 onPress: () => setWarningShow(true),
                 component: <>{Svg.right}</>,
               },
               {
-                name: '错误提示',
+                name: Strings.getLang('toastview_hasicon_error'),
                 onPress: () => setErrorShow(true),
                 component: <>{Svg.right}</>,
               },
               {
-                name: '加载提示',
+                name: Strings.getLang('toastview_hasicon_loading'),
                 onPress: () => setLoadingShow(true),
                 component: <>{Svg.right}</>,
               },
             ],
           },
           {
-            title: '不带icon样式',
+            title: Strings.getLang('toastview_noicon'),
             list: [
               {
-                name: '轻提示',
+                name: Strings.getLang('toastview_light'),
                 onPress: () => setShow(true),
                 component: <>{Svg.right}</>,
               },
@@ -50,11 +51,27 @@ export default () => {
           },
         ]}
       />
-      <Toast.Success show={successShow} text="成功文案" onFinish={() => setSuccessShow(false)} />
-      <Toast.Warning show={warningShow} text="警示文案" onFinish={() => setWarningShow(false)} />
-      <Toast.Error show={errorShow} text="错误文案" onFinish={() => setErrorShow(false)} />
+      <Toast.Success
+        show={successShow}
+        text={Strings.getLang('toastview_hasicon_success_text')}
+        onFinish={() => setSuccessShow(false)}
+      />
+      <Toast.Warning
+        show={warningShow}
+        text={Strings.getLang('toastview_hasicon_warn_text')}
+        onFinish={() => setWarningShow(false)}
+      />
+      <Toast.Error
+        show={errorShow}
+        text={Strings.getLang('toastview_hasicon_error_text')}
+        onFinish={() => setErrorShow(false)}
+      />
       <Toast.Loading show={loadingShow} onFinish={() => setLoadingShow(false)} />
-      <Toast show={show} text="I'm toastView!!!" onFinish={() => setShow(false)} />
+      <Toast
+        show={show}
+        text={Strings.getLang('toastview_light_text')}
+        onFinish={() => setShow(false)}
+      />
     </>
   );
 };

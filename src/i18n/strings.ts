@@ -160,6 +160,19 @@ export default {
     tips_bottom_left: 'Bubble -bottom left',
     tips_bottom_mid: 'Bubble -bottom center',
     tips_bottom_right: 'Bubble -bottom right',
+    // toast-view
+    toastview: 'ToastView',
+    toastview_hasicon: 'With icon style',
+    toastview_hasicon_success: 'Success tips',
+    toastview_hasicon_success_text: 'Success Text',
+    toastview_hasicon_warn: 'Warning tips',
+    toastview_hasicon_warn_text: 'Warning Text',
+    toastview_hasicon_error: 'Error tips',
+    toastview_hasicon_error_text: 'Error Text',
+    toastview_hasicon_loading: 'Loading tips',
+    toastview_noicon: 'Without icon style',
+    toastview_light: 'Light prompt',
+    toastview_light_text: 'I am toastView!!!',
   },
   zh: {
     // common
@@ -322,5 +335,18 @@ export default {
     tips_bottom_left: '气泡 - 下左',
     tips_bottom_mid: '气泡 - 下中',
     tips_bottom_right: '气泡 - 下右',
+    // toast-view
+    toastview: 'ToastView 吐司',
+    toastview_hasicon: '带icon样式',
+    toastview_hasicon_success: '成功提示',
+    toastview_hasicon_success_text: '成功文案',
+    toastview_hasicon_warn: '警示提示',
+    toastview_hasicon_warn_text: '警示文案',
+    toastview_hasicon_error: '错误提示',
+    toastview_hasicon_error_text: '错误文案',
+    toastview_hasicon_loading: '加载提示',
+    toastview_noicon: '不带icon样式',
+    toastview_light: '轻提示',
+    toastview_light_text: 'I am toastView!!!',
   },
 };

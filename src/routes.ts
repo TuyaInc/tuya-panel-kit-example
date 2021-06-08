@@ -24,7 +24,6 @@ import NotificationLegacy from './pages/feedback/notification-legacy';
 import Popup from './pages/feedback/popup';
 import Swipeout from './pages/feedback/swipeout';
 import Tips from './pages/feedback/tips';
-
 import ToastView from './pages/feedback/toast-view';
 
 export const routes = [
@@ -137,7 +136,7 @@ export const routes = [
     component: Tips,
   },
   {
-    name: 'ToastView 吐司',
+    name: Strings.getLang('toastview'),
     href: '/feedback/toast-view',
     component: ToastView,
   },
