@@ -17,6 +17,7 @@ import SwitchButton from './pages/data-entry/switch-button';
 import TimerPicker from './pages/data-entry/timer-picker';
 // feedback
 import Dialog from './pages/feedback/dialog';
+import GlobalToast from './pages/feedback/global-toast';
 import ToastView from './pages/feedback/toast-view';
 
 export const routes = [
@@ -92,6 +93,11 @@ export const routes = [
     name: Strings.getLang('dialog'),
     href: '/feedback/dialog',
     component: Dialog,
+  },
+  {
+    name: Strings.getLang('globaltoast'),
+    href: '/feedback/global-toast',
+    component: GlobalToast,
   },
   {
     name: 'ToastView 吐司',

@@ -5,6 +5,7 @@ export default {
     text_subTitle: 'Sub Title',
     text_confirm: 'Confirm',
     text_cancel: 'Cancel',
+    text_basic: 'Basic Usage',
 
     // basic
     // button
@@ -104,6 +105,11 @@ export default {
     dialog_text_click_close: 'Click for Close',
     dialog_text_option: 'option{1}',
     dialog_text_cus_content: 'Custom Content',
+    // globaltoast
+    globaltoast: 'GlobalToast',
+    globaltoast_load: 'Loading Usage',
+    globaltoast_max: 'Suggestions for suggestive copywriting display up to 16 characters',
+    globaltoast_set: 'Set successfully',
   },
   zh: {
     // common
@@ -111,6 +117,7 @@ export default {
     text_subTitle: '副标题',
     text_confirm: '确认',
     text_cancel: '取消',
+    text_basic: '基础使用',
 
     // basic
     // button
@@ -210,5 +217,10 @@ export default {
     dialog_text_click_close: '点我关闭',
     dialog_text_option: '选项{1}',
     dialog_text_cus_content: '自定义内容',
+    // globaltoast
+    globaltoast: 'GlobalToast 全局吐司',
+    globaltoast_load: '加载使用',
+    globaltoast_max: '提示性文案建议最多展示十六个字符',
+    globaltoast_set: '设置成功',
   },
 };
