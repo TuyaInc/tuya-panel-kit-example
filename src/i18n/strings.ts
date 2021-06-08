@@ -217,6 +217,15 @@ export default {
     tabs_tabcontenttab_4: 'Stencil_{0}',
     tabs_screen2: 'Tabs with content on multiple screens',
     tabs_nested: 'Nested Tabs',
+    // topbar
+    topbar: 'TopBar',
+    topbar_basic_split: 'Basic usage - split version',
+    topbar_basic_pack: 'Basic use - package version',
+    topbar_rad_pack: 'Radial Gradient - package version',
+    topbar_line_split: 'Linear gradient - split version',
+    topbar_mul_split: 'Multi toolbar - split version',
+    topbar_mul_pack: 'Multi toolbar change - package version',
+    topbar_timing: 'timing',
   },
   zh: {
     // common
@@ -436,5 +445,14 @@ export default {
     tabs_tabcontenttab_4: '模版_{0}',
     tabs_screen2: '多屏存在内容的 Tabs',
     tabs_nested: '嵌套的 Tabs',
+    // topbar
+    topbar: 'TopBar 头部栏',
+    topbar_basic_split: '基础使用 - 拆分版',
+    topbar_basic_pack: '基础使用 - 封装版',
+    topbar_rad_pack: '径向渐变 - 封装版',
+    topbar_line_split: '线性渐变 - 拆分版',
+    topbar_mul_split: '多工具栏 - 拆分版',
+    topbar_mul_pack: '多工具栏 - 封装版',
+    topbar_timing: '定时',
   },
 };

@@ -30,6 +30,7 @@ import ControllerBar from './pages/navigation/controller-bar';
 import Tab from './pages/navigation/tab';
 import TabBar from './pages/navigation/tab-bar';
 import Tabs from './pages/navigation/tabs';
+import TopBar from './pages/navigation/top-bar';
 
 export const routes = [
   // basic
@@ -165,5 +166,10 @@ export const routes = [
     name: Strings.getLang('tabs'),
     href: '/navigation/tabs',
     component: Tabs,
+  },
+  {
+    name: Strings.getLang('topbar'),
+    href: '/navigation/top-bar',
+    component: TopBar,
   },
 ];
