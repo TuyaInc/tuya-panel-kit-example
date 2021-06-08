@@ -1,5 +1,11 @@
 export default {
   en: {
+    // common
+    text_title: 'Title',
+    text_subTitle: 'Sub Title',
+    text_confirm: 'Confirm',
+    text_cancel: 'Cancel',
+
     // basic
     // button
     button: 'Button',
@@ -77,8 +83,35 @@ export default {
     timepicker: 'TimerPicker',
     timepicker_basic: 'Basic use of time period selector',
     timepicker_prefix: 'Time period selector with prefix position',
+
+    // feedback
+    // dialog
+    dialog: 'Dialog',
+    dialog_alert: 'Alert Dialog',
+    dialog_confirm: 'Confirm Dialog',
+    dialog_prompt: 'Prompt Dialog（UnControlled）',
+    dialog_prompt_control: 'Controlled Prompt（Controlled）',
+    dialog_single: 'Single Selection Checkbox',
+    dialog_multi: 'Multi Selection Checkbox',
+    dialog_list: 'List Dialog',
+    dialog_custom: 'Custom Dialog',
+    dialog_text_sensor: 'Sensor selection',
+    dialog_text_room: 'Room sensor calibration',
+    dialog_text_floor: 'Floor sensor calibration',
+    dialog_text_adap: 'Floor sensor calibration',
+    dialog_text_frost: 'Floor sensor calibration',
+    dialog_text_test: 'Floor sensor calibration',
+    dialog_text_click_close: 'Click for Close',
+    dialog_text_option: 'option{1}',
+    dialog_text_cus_content: 'Custom Content',
   },
   zh: {
+    // common
+    text_title: '标题',
+    text_subTitle: '副标题',
+    text_confirm: '确认',
+    text_cancel: '取消',
+
     // basic
     // button
     button: 'Button 按钮',
@@ -156,5 +189,26 @@ export default {
     timepicker: 'TimerPicker 时间段选择器',
     timepicker_basic: '时间段选择器基础使用',
     timepicker_prefix: '时间段选择器配合前缀位置',
+
+    // feedback
+    // dialog
+    dialog: 'Dialog 对话框',
+    dialog_alert: '警告框',
+    dialog_confirm: '提示框',
+    dialog_prompt: '输入对话框（非受控）',
+    dialog_prompt_control: '输入对话框（受控）',
+    dialog_single: '单选对话框',
+    dialog_multi: '多选对话框',
+    dialog_list: '列表对话框',
+    dialog_custom: '自定义对话框',
+    dialog_text_sensor: '传感器选择',
+    dialog_text_room: '房间传感器校准',
+    dialog_text_floor: '地板传感器校准',
+    dialog_text_adap: '自适应功能',
+    dialog_text_frost: '防冻保护功能',
+    dialog_text_test: '测试滚动功能',
+    dialog_text_click_close: '点我关闭',
+    dialog_text_option: '选项{1}',
+    dialog_text_cus_content: '自定义内容',
   },
 };

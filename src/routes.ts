@@ -87,14 +87,15 @@ export const routes = [
     href: '/data-entry/timer-picker',
     component: TimerPicker,
   },
+  // feedback
+  {
+    name: Strings.getLang('dialog'),
+    href: '/feedback/dialog',
+    component: Dialog,
+  },
   {
     name: 'ToastView 吐司',
     href: '/feedback/toast-view',
     component: ToastView,
-  },
-  {
-    name: 'Dialog 对话框',
-    href: '/feedback/dialog',
-    component: Dialog,
   },
 ];

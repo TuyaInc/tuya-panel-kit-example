@@ -16,7 +16,6 @@ export default defineConfig({
     "@components": join(__dirname, "./src/components"),
     "@hooks": join(__dirname, "./src/hooks"),
     "@i18n": join(__dirname, "./src/i18n"),
-    '../picker-view': '../picker-view/index.web.js'
   },
   fastRefresh: {},
 });
