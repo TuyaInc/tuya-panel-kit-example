@@ -145,6 +145,13 @@ export default {
     popup_pickermore: 'Picker select pop-up layer (multiple choice)',
     popup_cus: 'Costom Popup',
     popup_toast: 'Toast Popup',
+    // swipeout
+    swipeout: 'Swipeout',
+    swipeout_left: 'Slide left',
+    swipeout_left_content: 'Try sliding left',
+    swipeout_right: 'Slide right',
+    swipeout_right_content: 'Try sliding right',
+    swipeout_disable: 'Disable sideslip',
   },
   zh: {
     // common
@@ -292,5 +299,12 @@ export default {
     popup_pickermore: 'Picker 选择弹出层（多选）',
     popup_cus: '自定义弹出层',
     popup_toast: 'Toast 弹出层',
+    // swipeout
+    swipeout: 'Swipeout 侧滑',
+    swipeout_left: '左侧滑',
+    swipeout_left_content: '试试左滑',
+    swipeout_right: '右侧滑',
+    swipeout_right_content: '试试右滑',
+    swipeout_disable: '禁用侧滑',
   },
 };

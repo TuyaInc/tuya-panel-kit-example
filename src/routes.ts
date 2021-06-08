@@ -22,6 +22,7 @@ import Modal from './pages/feedback/modal';
 import Notification from './pages/feedback/notification';
 import NotificationLegacy from './pages/feedback/notification-legacy';
 import Popup from './pages/feedback/popup';
+import Swipeout from './pages/feedback/swipeout';
 
 import ToastView from './pages/feedback/toast-view';
 
@@ -123,6 +124,11 @@ export const routes = [
     name: Strings.getLang('popup'),
     href: '/feedback/popup',
     component: Popup,
+  },
+  {
+    name: Strings.getLang('swipeout'),
+    href: '/feedback/swipeout',
+    component: Swipeout,
   },
   {
     name: 'ToastView 吐司',
