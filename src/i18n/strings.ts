@@ -187,6 +187,10 @@ export default {
     tab_content_2: 'A day is hard to come in the morning',
     tab_content_3: 'Time to encourage yourself',
     tab_content_4: 'Time treats no one',
+    // tabbar
+    tabbar: 'TabBar',
+    tabbar_basic: 'Basic usage',
+    tabbar_radio: 'radio type',
   },
   zh: {
     // common
@@ -376,5 +380,9 @@ export default {
     tab_content_2: '一日难再晨',
     tab_content_3: '及时宜自勉',
     tab_content_4: '岁月不待人',
+    // tabbar
+    tabbar: 'TabBar 标签栏拆分版',
+    tabbar_basic: '基础类型',
+    tabbar_radio: 'radio 类型',
   },
 };

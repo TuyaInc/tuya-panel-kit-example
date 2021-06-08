@@ -28,6 +28,7 @@ import ToastView from './pages/feedback/toast-view';
 // navigation
 import ControllerBar from './pages/navigation/controller-bar';
 import Tab from './pages/navigation/tab';
+import TabBar from './pages/navigation/tab-bar';
 
 export const routes = [
   // basic
@@ -153,5 +154,10 @@ export const routes = [
     name: Strings.getLang('tab'),
     href: '/navigation/tab',
     component: Tab,
+  },
+  {
+    name: Strings.getLang('tabbar'),
+    href: '/navigation/tab-bar',
+    component: TabBar,
   },
 ];
