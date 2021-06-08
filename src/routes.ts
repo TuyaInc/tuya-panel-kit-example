@@ -21,6 +21,8 @@ import GlobalToast from './pages/feedback/global-toast';
 import Modal from './pages/feedback/modal';
 import Notification from './pages/feedback/notification';
 import NotificationLegacy from './pages/feedback/notification-legacy';
+import Popup from './pages/feedback/popup';
+
 import ToastView from './pages/feedback/toast-view';
 
 export const routes = [
@@ -116,6 +118,11 @@ export const routes = [
     name: Strings.getLang('notificationlegacy'),
     href: '/feedback/notification-legacy',
     component: NotificationLegacy,
+  },
+  {
+    name: Strings.getLang('popup'),
+    href: '/feedback/popup',
+    component: Popup,
   },
   {
     name: 'ToastView 吐司',

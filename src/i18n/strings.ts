@@ -8,6 +8,8 @@ export default {
     text_basic: 'Basic Usage',
     text_hour: 'hour',
     text_minute: 'minute',
+    text_single: 'single selection',
+    text_mul: 'multiple selection',
 
     // basic
     // button
@@ -105,7 +107,7 @@ export default {
     dialog_text_frost: 'Floor sensor calibration',
     dialog_text_test: 'Floor sensor calibration',
     dialog_text_click_close: 'Click for Close',
-    dialog_text_option: 'option{1}',
+    dialog_text_option: 'option{0}',
     dialog_text_cus_content: 'Custom Content',
     // globaltoast
     globaltoast: 'GlobalToast',
@@ -129,6 +131,20 @@ export default {
     // notification-legacy
     notificationlegacy: 'NotificationLegacy',
     notificationlegacy_content: 'I am Notification',
+    // popup
+    popup: 'Popup',
+    popup_count: 'Countdown popup layer',
+    popup_date: 'Date selection popup',
+    popup_time: 'Time period selection pop-up layer',
+    popup_time_title: 'Time period selection',
+    popup_number: 'Number selection pop-up layer',
+    popup_number_title: 'Temperature adjustment (℃)',
+    popup_list: 'List selection pop-up layer (single selection)',
+    popup_listmore: 'List selection pop-up layer (multiple selection)',
+    popup_picker: 'Picker select pop-up layer (single choice)',
+    popup_pickermore: 'Picker select pop-up layer (multiple choice)',
+    popup_cus: 'Costom Popup',
+    popup_toast: 'Toast Popup',
   },
   zh: {
     // common
@@ -139,6 +155,8 @@ export default {
     text_basic: '基础使用',
     text_hour: '小时',
     text_minute: '分钟',
+    text_single: '单选',
+    text_mul: '多选',
 
     // basic
     // button
@@ -236,7 +254,7 @@ export default {
     dialog_text_frost: '防冻保护功能',
     dialog_text_test: '测试滚动功能',
     dialog_text_click_close: '点我关闭',
-    dialog_text_option: '选项{1}',
+    dialog_text_option: '选项{0}',
     dialog_text_cus_content: '自定义内容',
     // globaltoast
     globaltoast: 'GlobalToast 全局吐司',
@@ -260,5 +278,19 @@ export default {
     // notification-legacy
     notificationlegacy: 'NotificationLegacy 通知栏',
     notificationlegacy_content: 'I am Notification',
+    // popup
+    popup: 'Popup 弹出层',
+    popup_count: '倒计时弹出层',
+    popup_date: '日期选择弹出层',
+    popup_time: '时间段选择弹出层',
+    popup_time_title: '时间段选择',
+    popup_number: '数值选择弹出层',
+    popup_number_title: '温度调节 (℃)',
+    popup_list: '列表选择弹出层（单选）',
+    popup_listmore: '列表选择弹出层（多选）',
+    popup_picker: 'Picker 选择弹出层（单选）',
+    popup_pickermore: 'Picker 选择弹出层（多选）',
+    popup_cus: '自定义弹出层',
+    popup_toast: 'Toast 弹出层',
   },
 };
