@@ -6,6 +6,8 @@ export default {
     text_confirm: 'Confirm',
     text_cancel: 'Cancel',
     text_basic: 'Basic Usage',
+    text_hour: 'hour',
+    text_minute: 'minute',
 
     // basic
     // button
@@ -110,6 +112,16 @@ export default {
     globaltoast_load: 'Loading Usage',
     globaltoast_max: 'Suggestions for suggestive copywriting display up to 16 characters',
     globaltoast_set: 'Set successfully',
+    // modal
+    modal: 'Modal',
+    modal_count: 'Countdown popup layer',
+    modal_date: 'Date selection popup',
+    modal_list_single: 'List selection pop-up layer (single selection)',
+    modal_list_mul: 'List selection pop-up layer (multiple selection)',
+    modal_list_pick: 'Picker select pop-up layer',
+    modal_content_iam: 'I am Modal',
+    modal_content_count_title: 'Countdown',
+    modal_content_date_title: 'Birthday',
   },
   zh: {
     // common
@@ -118,6 +130,8 @@ export default {
     text_confirm: '确认',
     text_cancel: '取消',
     text_basic: '基础使用',
+    text_hour: '小时',
+    text_minute: '分钟',
 
     // basic
     // button
@@ -222,5 +236,15 @@ export default {
     globaltoast_load: '加载使用',
     globaltoast_max: '提示性文案建议最多展示十六个字符',
     globaltoast_set: '设置成功',
+    // modal
+    modal: 'Modal 遮罩',
+    modal_count: '倒计时弹出层',
+    modal_date: '日期选择弹出层',
+    modal_list_single: '列表选择弹出层（单选）',
+    modal_list_mul: '列表选择弹出层（多选）',
+    modal_list_pick: 'Picker 选择弹出层',
+    modal_content_iam: '我是遮罩',
+    modal_content_count_title: '倒计时',
+    modal_content_date_title: '生日',
   },
 };

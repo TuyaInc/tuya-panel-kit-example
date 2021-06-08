@@ -18,6 +18,7 @@ import TimerPicker from './pages/data-entry/timer-picker';
 // feedback
 import Dialog from './pages/feedback/dialog';
 import GlobalToast from './pages/feedback/global-toast';
+import Modal from './pages/feedback/modal';
 import ToastView from './pages/feedback/toast-view';
 
 export const routes = [
@@ -98,6 +99,11 @@ export const routes = [
     name: Strings.getLang('globaltoast'),
     href: '/feedback/global-toast',
     component: GlobalToast,
+  },
+  {
+    name: Strings.getLang('modal'),
+    href: '/feedback/modal',
+    component: Modal,
   },
   {
     name: 'ToastView 吐司',
