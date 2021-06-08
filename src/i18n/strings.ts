@@ -226,6 +226,15 @@ export default {
     topbar_mul_split: 'Multi toolbar - split version',
     topbar_mul_pack: 'Multi toolbar change - package version',
     topbar_timing: 'timing',
+
+    // presentation
+    // carousel
+    carousel: 'Carousel',
+    // circle-view
+    circleview: 'CircleView',
+    circleview_basic: 'Basic Usage',
+    circleview_border: 'CircleView with border',
+    circleview_embedded: 'CircleView with embedded custom content',
   },
   zh: {
     // common
@@ -454,5 +463,14 @@ export default {
     topbar_mul_split: '多工具栏 - 拆分版',
     topbar_mul_pack: '多工具栏 - 封装版',
     topbar_timing: '定时',
+
+    // presentation
+    // carousel
+    carousel: 'Carousel 轮播',
+    // circle-view
+    circleview: 'CircleView 圆形视图',
+    circleview_basic: '基础展示',
+    circleview_border: '带边框的圆形视图',
+    circleview_embedded: '内嵌自定义内容的圆形视图',
   },
 };

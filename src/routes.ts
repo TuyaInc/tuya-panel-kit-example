@@ -31,6 +31,9 @@ import Tab from './pages/navigation/tab';
 import TabBar from './pages/navigation/tab-bar';
 import Tabs from './pages/navigation/tabs';
 import TopBar from './pages/navigation/top-bar';
+// presentation
+import Carousel from './pages/presentation/carousel';
+import CircleView from './pages/presentation/circle-view';
 
 export const routes = [
   // basic
@@ -171,5 +174,15 @@ export const routes = [
     name: Strings.getLang('topbar'),
     href: '/navigation/top-bar',
     component: TopBar,
+  },
+  {
+    name: Strings.getLang('carousel'),
+    href: '/presentation/carousel',
+    component: Carousel,
+  },
+  {
+    name: Strings.getLang('circleview'),
+    href: '/presentation/circle-view',
+    component: CircleView,
   },
 ];
