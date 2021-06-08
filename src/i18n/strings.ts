@@ -126,6 +126,9 @@ export default {
     notification: 'Notification',
     notification_label: 'Click me show Notification',
     notification_tip: 'Warning Notification',
+    // notification-legacy
+    notificationlegacy: 'NotificationLegacy',
+    notificationlegacy_content: 'I am Notification',
   },
   zh: {
     // common
@@ -254,5 +257,8 @@ export default {
     notification: 'Notification 全局通知',
     notification_label: '点我显示通知栏',
     notification_tip: '警告提示框',
+    // notification-legacy
+    notificationlegacy: 'NotificationLegacy 通知栏',
+    notificationlegacy_content: 'I am Notification',
   },
 };
