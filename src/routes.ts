@@ -25,6 +25,8 @@ import Popup from './pages/feedback/popup';
 import Swipeout from './pages/feedback/swipeout';
 import Tips from './pages/feedback/tips';
 import ToastView from './pages/feedback/toast-view';
+// navigation
+import ControllerBar from './pages/navigation/controller-bar';
 
 export const routes = [
   // basic
@@ -139,5 +141,11 @@ export const routes = [
     name: Strings.getLang('toastview'),
     href: '/feedback/toast-view',
     component: ToastView,
+  },
+  // navigation
+  {
+    name: Strings.getLang('controllerbar'),
+    href: '/navigation/controller-bar',
+    component: ControllerBar,
   },
 ];

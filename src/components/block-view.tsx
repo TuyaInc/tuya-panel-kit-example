@@ -85,7 +85,6 @@ const styles = StyleSheet.create({
   item_before: {
     backgroundColor: '#F2F2F2',
     height: cx(1),
-    width: '100%',
   },
   item: {
     height: cx(48),

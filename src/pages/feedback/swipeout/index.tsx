@@ -14,7 +14,7 @@ export default () => {
           content: (
             <Swipeout
               style={{
-                width: '100%',
+                flex: 1,
               }}
               autoClose={true}
               left={[
@@ -48,7 +48,7 @@ export default () => {
           content: (
             <Swipeout
               style={{
-                width: '100%',
+                flex: 1,
               }}
               autoClose={true}
               right={[
@@ -82,7 +82,7 @@ export default () => {
           content: (
             <Swipeout
               style={{
-                width: '100%',
+                flex: 1,
               }}
               autoClose={true}
               disabled={true}

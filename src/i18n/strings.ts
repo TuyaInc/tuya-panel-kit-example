@@ -173,6 +173,14 @@ export default {
     toastview_noicon: 'Without icon style',
     toastview_light: 'Light prompt',
     toastview_light_text: 'I am toastView!!!',
+
+    // navigation
+    // controllerbar
+    controllerbar: 'ControllerBar',
+    controllerbar_basic: 'Basic Bottom Bar',
+    controllerbar_base: 'ControllerBar.Group base version',
+    controllerbar_swiper: 'ControllerBar.Group Swiper version',
+    controllerbar_divide: 'ControllerBar divide version',
   },
   zh: {
     // common
@@ -348,5 +356,13 @@ export default {
     toastview_noicon: '不带icon样式',
     toastview_light: '轻提示',
     toastview_light_text: 'I am toastView!!!',
+
+    // navigation
+    // controllerbar
+    controllerbar: 'ControllerBar',
+    controllerbar_basic: '基础底部栏',
+    controllerbar_base: 'ControllerBar.Group base 版',
+    controllerbar_swiper: 'ControllerBar.Group Swiper 版',
+    controllerbar_divide: 'ControllerBar divide 版',
   },
 };
