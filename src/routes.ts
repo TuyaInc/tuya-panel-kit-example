@@ -19,6 +19,7 @@ import TimerPicker from './pages/data-entry/timer-picker';
 import Dialog from './pages/feedback/dialog';
 import GlobalToast from './pages/feedback/global-toast';
 import Modal from './pages/feedback/modal';
+import Notification from './pages/feedback/notification';
 import ToastView from './pages/feedback/toast-view';
 
 export const routes = [
@@ -104,6 +105,11 @@ export const routes = [
     name: Strings.getLang('modal'),
     href: '/feedback/modal',
     component: Modal,
+  },
+  {
+    name: Strings.getLang('notification'),
+    href: '/feedback/notification',
+    component: Notification,
   },
   {
     name: 'ToastView 吐司',

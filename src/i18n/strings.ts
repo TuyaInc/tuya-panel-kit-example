@@ -122,6 +122,10 @@ export default {
     modal_content_iam: 'I am Modal',
     modal_content_count_title: 'Countdown',
     modal_content_date_title: 'Birthday',
+    // notification
+    notification: 'Notification',
+    notification_label: 'Click me show Notification',
+    notification_tip: 'Warning Notification',
   },
   zh: {
     // common
@@ -246,5 +250,9 @@ export default {
     modal_content_iam: '我是遮罩',
     modal_content_count_title: '倒计时',
     modal_content_date_title: '生日',
+    // notification
+    notification: 'Notification 全局通知',
+    notification_label: '点我显示通知栏',
+    notification_tip: '警告提示框',
   },
 };
