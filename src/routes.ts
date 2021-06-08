@@ -27,6 +27,7 @@ import Tips from './pages/feedback/tips';
 import ToastView from './pages/feedback/toast-view';
 // navigation
 import ControllerBar from './pages/navigation/controller-bar';
+import Tab from './pages/navigation/tab';
 
 export const routes = [
   // basic
@@ -147,5 +148,10 @@ export const routes = [
     name: Strings.getLang('controllerbar'),
     href: '/navigation/controller-bar',
     component: ControllerBar,
+  },
+  {
+    name: Strings.getLang('tab'),
+    href: '/navigation/tab',
+    component: Tab,
   },
 ];

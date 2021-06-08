@@ -181,6 +181,12 @@ export default {
     controllerbar_base: 'ControllerBar.Group base version',
     controllerbar_swiper: 'ControllerBar.Group Swiper version',
     controllerbar_divide: 'ControllerBar divide version',
+    // tab
+    tab: 'Tab',
+    tab_content_1: 'The prime year does not come again',
+    tab_content_2: 'A day is hard to come in the morning',
+    tab_content_3: 'Time to encourage yourself',
+    tab_content_4: 'Time treats no one',
   },
   zh: {
     // common
@@ -364,5 +370,11 @@ export default {
     controllerbar_base: 'ControllerBar.Group base 版',
     controllerbar_swiper: 'ControllerBar.Group Swiper 版',
     controllerbar_divide: 'ControllerBar divide 版',
+    // tab
+    tab: 'Tab 标签栏',
+    tab_content_1: '盛年不重来',
+    tab_content_2: '一日难再晨',
+    tab_content_3: '及时宜自勉',
+    tab_content_4: '岁月不待人',
   },
 };
