@@ -36,6 +36,7 @@ import Carousel from './pages/presentation/carousel';
 import CircleView from './pages/presentation/circle-view';
 import Collapsible from './pages/presentation/collapsible';
 import Divider from './pages/presentation/divider';
+import LinearGradient from './pages/presentation/linear-gradient';
 
 export const routes = [
   // basic
@@ -196,5 +197,10 @@ export const routes = [
     name: Strings.getLang('divider'),
     href: '/presentation/divider',
     component: Divider,
+  },
+  {
+    name: Strings.getLang('lineargradient'),
+    href: '/presentation/linear-gradient',
+    component: LinearGradient,
   },
 ];

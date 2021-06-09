@@ -243,6 +243,10 @@ export default {
     divider: 'Divider',
     divider_basic: 'Basic form',
     divider_block: 'Block form display',
+    // linear-gradient
+    lineargradient: 'LinearGradient',
+    lineargradient_two: 'Two vertical gradients',
+    lineargradient_obl: 'Oblique three-stage gradient',
   },
   zh: {
     // common
@@ -488,5 +492,9 @@ export default {
     divider: 'Divider 分割线',
     divider_basic: '基础形式',
     divider_block: '块状形式展示',
+    // linear-gradient
+    lineargradient: 'LinearGradient 线性渐变',
+    lineargradient_two: '垂直两段渐变',
+    lineargradient_obl: '斜向三段渐变',
   },
 };

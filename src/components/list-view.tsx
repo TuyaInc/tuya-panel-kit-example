@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
 import { TYText, Utils } from 'tuya-panel-kit';
 
 const { convertX } = Utils.RatioUtils;
@@ -7,6 +7,7 @@ const { convertX } = Utils.RatioUtils;
 type ListItem = {
   title: string;
   content: React.ReactNode;
+  itemStyle?: StyleProp<ViewStyle>;
 };
 
 export interface ListViewProps {
@@ -19,7 +20,7 @@ export const ListView = ({ list, contentPadding = true, contentCenter = false }:
   return (
     <View style={styles.list}>
       {list.map(item => (
-        <View style={styles.list_item} key={item.title}>
+        <View style={[styles.list_item, item.itemStyle]} key={item.title}>
           <TYText style={styles.list_item_title}>{`· ${item.title}`}</TYText>
           <View
             style={[
