@@ -34,6 +34,8 @@ import TopBar from './pages/navigation/top-bar';
 // presentation
 import Carousel from './pages/presentation/carousel';
 import CircleView from './pages/presentation/circle-view';
+import Collapsible from './pages/presentation/collapsible';
+import Divider from './pages/presentation/divider';
 
 export const routes = [
   // basic
@@ -184,5 +186,15 @@ export const routes = [
     name: Strings.getLang('circleview'),
     href: '/presentation/circle-view',
     component: CircleView,
+  },
+  {
+    name: Strings.getLang('collapsible'),
+    href: '/presentation/collapsible',
+    component: Collapsible,
+  },
+  {
+    name: Strings.getLang('divider'),
+    href: '/presentation/divider',
+    component: Divider,
   },
 ];

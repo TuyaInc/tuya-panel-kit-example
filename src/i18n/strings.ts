@@ -235,6 +235,14 @@ export default {
     circleview_basic: 'Basic Usage',
     circleview_border: 'CircleView with border',
     circleview_embedded: 'CircleView with embedded custom content',
+    // collapsible
+    collapsible: 'Collapsible',
+    collapsible_content: 'Respond to ever-changing things with no change, no tricks.',
+    collapsible_label: 'Click me',
+    // divider
+    divider: 'Divider',
+    divider_basic: 'Basic form',
+    divider_block: 'Block form display',
   },
   zh: {
     // common
@@ -472,5 +480,13 @@ export default {
     circleview_basic: '基础展示',
     circleview_border: '带边框的圆形视图',
     circleview_embedded: '内嵌自定义内容的圆形视图',
+    // collapsible
+    collapsible: 'Collapsible 折叠',
+    collapsible_content: '以不变应万变，无招胜有招。',
+    collapsible_label: '点我试试',
+    // divider
+    divider: 'Divider 分割线',
+    divider_basic: '基础形式',
+    divider_block: '块状形式展示',
   },
 };
