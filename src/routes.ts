@@ -41,6 +41,7 @@ import Progress from './pages/presentation/progress';
 import RadialGradient from './pages/presentation/radial-gradient';
 import RotationView from './pages/presentation/rotation-view';
 import TYFlatList from './pages/presentation/tyflat-list';
+import TYListItem from './pages/presentation/tylist-item';
 
 export const routes = [
   // basic
@@ -218,8 +219,18 @@ export const routes = [
     component: RadialGradient,
   },
   {
+    name: Strings.getLang('rotationview'),
+    href: '/presentation/rotation-view',
+    component: RotationView,
+  },
+  {
     name: Strings.getLang('tyflatlist'),
     href: '/presentation/tyflat-list',
     component: TYFlatList,
+  },
+  {
+    name: Strings.getLang('tylistitem'),
+    href: '/presentation/tylist-item',
+    component: TYListItem,
   },
 ];

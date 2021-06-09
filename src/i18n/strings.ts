@@ -277,6 +277,13 @@ export default {
     tyflatlist_7_title: 'List custom rendering item',
     tyflatlist_7_action: 'Cleaned successfully',
     tyflatlist_7_subTitle: 'Cleaning 0 square meters | work 5 minutes',
+    // tylist-item
+    tylistitem: 'TYListItem',
+    tylistitem_basic: 'Basic list',
+    tylistitem_long: 'Long copy adaptation',
+    tylistitem_long_title: 'This is an adaptive English title with a long copy',
+    tylistitem_ada: 'Adapt Icon',
+    tylistitem_ada_title: 'This is a title',
   },
   zh: {
     // common
@@ -556,5 +563,12 @@ export default {
     tyflatlist_7_title: '列表自定义渲染item',
     tyflatlist_7_action: '清扫成功',
     tyflatlist_7_subTitle: '清扫 0平方米 | 工作 5分钟',
+    // tylist-item
+    tylistitem: 'TYListItem 列表项',
+    tylistitem_basic: '基础列表',
+    tylistitem_long: '文案过长适配',
+    tylistitem_long_title: '这是一个标题这是一个标题这是一个标题这是一个标题',
+    tylistitem_ada: '适配 Icon',
+    tylistitem_ada_title: '这是一个标题',
   },
 };

@@ -44,7 +44,6 @@ export default () => {
               activeKey={tabRadio}
               onChange={value => setTabRadio(value)}
               style={{
-                flex: 1,
                 borderColor: 'red',
                 backgroundColor: '#000',
                 height: 54,

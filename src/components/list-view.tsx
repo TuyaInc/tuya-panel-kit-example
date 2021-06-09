@@ -51,8 +51,5 @@ const styles = StyleSheet.create({
   },
   list_item_content: {
     marginTop: convertX(16),
-    display: 'flex',
-    justifyContent: 'flex-start',
-    flexDirection: 'row',
   },
 });

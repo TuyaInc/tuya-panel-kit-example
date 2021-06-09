@@ -13,9 +13,6 @@ export default () => {
           title: Strings.getLang('swipeout_left'),
           content: (
             <Swipeout
-              style={{
-                flex: 1,
-              }}
               autoClose={true}
               left={[
                 {
@@ -47,9 +44,6 @@ export default () => {
           title: Strings.getLang('swipeout_right'),
           content: (
             <Swipeout
-              style={{
-                flex: 1,
-              }}
               autoClose={true}
               right={[
                 {
@@ -81,9 +75,6 @@ export default () => {
           title: Strings.getLang('swipeout_disable'),
           content: (
             <Swipeout
-              style={{
-                flex: 1,
-              }}
               autoClose={true}
               disabled={true}
               right={[
