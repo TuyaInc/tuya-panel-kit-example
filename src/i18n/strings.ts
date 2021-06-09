@@ -257,6 +257,10 @@ export default {
     radialgradient_y2b: 'Radial gradient from yellow to blue outwards',
     radialgradient_ryp: 'Radial gradient from red-yellow-pink outward',
     radialgradient_add: 'Add a radial gradient effect to the panel background in the business',
+    // rotation-view
+    rotationview: 'RotationView',
+    rotationview_round: 'Round the edge',
+    rotationview_circle: 'Circle around the center',
   },
   zh: {
     // common
@@ -516,5 +520,9 @@ export default {
     radialgradient_y2b: '向外进行由黄色-蓝色的径向渐变',
     radialgradient_ryp: '向外进行由红色-黄色-粉色的径向渐变',
     radialgradient_add: '业务中给面板背景添加径向渐变效果',
+    // rotation-view
+    rotationview: 'RotationView 旋转视图',
+    rotationview_round: '绕边缘转圈形式',
+    rotationview_circle: '绕中心转圈',
   },
 };

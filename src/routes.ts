@@ -39,6 +39,7 @@ import Divider from './pages/presentation/divider';
 import LinearGradient from './pages/presentation/linear-gradient';
 import Progress from './pages/presentation/progress';
 import RadialGradient from './pages/presentation/radial-gradient';
+import RotationView from './pages/presentation/rotation-view';
 
 export const routes = [
   // basic
@@ -214,5 +215,10 @@ export const routes = [
     name: Strings.getLang('radialgradient'),
     href: '/presentation/radial-gradient',
     component: RadialGradient,
+  },
+  {
+    name: Strings.getLang('rotationview'),
+    href: '/presentation/rotation-view',
+    component: RotationView,
   },
 ];
