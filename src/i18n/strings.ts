@@ -284,6 +284,23 @@ export default {
     tylistitem_long_title: 'This is an adaptive English title with a long copy',
     tylistitem_ada: 'Adapt Icon',
     tylistitem_ada_title: 'This is a title',
+    // tysection-list
+    tysectionlist: 'TYSectionList',
+    tysectionlist_basic: 'Basic list item',
+    tysectionlist_basic_title: 'List title',
+    tysectionlist_basic_subTitle: 'List subtitle',
+    tysectionlist_select: 'Select box list item',
+    tysectionlist_select_action: 'Cleaned successfully',
+    tysectionlist_select_title: 'April 11th, 23:15',
+    tysectionlist_select_subTitle: 'Cleaning 0 square meters | work 5 minutes',
+    tysectionlist_slider: 'Slider list item',
+    tysectionlist_input: 'Input box list item',
+    tysectionlist_input_title: 'Name',
+    tysectionlist_input_place: 'Enter name',
+    tysectionlist_switch: 'Switch list item adaptation',
+    tysectionlist_switch_title: 'The situation where the title of the list is too long --- ',
+    tysectionlist_switch_subTitle:
+      'This is the case where the detailed information content of this list is too long',
   },
   zh: {
     // common
@@ -570,5 +587,22 @@ export default {
     tylistitem_long_title: '这是一个标题这是一个标题这是一个标题这是一个标题',
     tylistitem_ada: '适配 Icon',
     tylistitem_ada_title: '这是一个标题',
+    // tysection-list
+    tysectionlist: 'TYSectionList 分组列表',
+    tysectionlist_basic: '基础列表项',
+    tysectionlist_basic_title: '列表标题',
+    tysectionlist_basic_subTitle: '列表副标题',
+    tysectionlist_select: '选择框列表项',
+    tysectionlist_select_action: '清扫成功',
+    tysectionlist_select_title: '04月11日 23:15',
+    tysectionlist_select_subTitle: '清扫 0平方米 | 工作 5分钟',
+    tysectionlist_slider: '滑动条列表项',
+    tysectionlist_input: '输入框列表项',
+    tysectionlist_input_title: '名字',
+    tysectionlist_input_place: '输入名字',
+    tysectionlist_switch: '开关列表项适配',
+    tysectionlist_switch_title: '列表标题过长的情况列表标题过长的情况列表标题过长的情况',
+    tysectionlist_switch_subTitle:
+      '这是这个列表的详细信息内容过长的情况这是这个列表的详细信息内容过长的情况',
   },
 };

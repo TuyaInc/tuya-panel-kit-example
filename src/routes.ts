@@ -42,6 +42,7 @@ import RadialGradient from './pages/presentation/radial-gradient';
 import RotationView from './pages/presentation/rotation-view';
 import TYFlatList from './pages/presentation/tyflat-list';
 import TYListItem from './pages/presentation/tylist-item';
+import TYSectionList from './pages/presentation/tysection-list';
 
 export const routes = [
   // basic
@@ -232,5 +233,10 @@ export const routes = [
     name: Strings.getLang('tylistitem'),
     href: '/presentation/tylist-item',
     component: TYListItem,
+  },
+  {
+    name: Strings.getLang('tysectionlist'),
+    href: '/presentation/tysection-list',
+    component: TYSectionList,
   },
 ];
