@@ -1151,11 +1151,6 @@
     remark "^13.0.0"
     unist-util-find-all-after "^3.0.2"
 
-"@tuya-rn/umi-plugin-tuya-panel-kit@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry-npm.tuya-inc.top/@tuya-rn/umi-plugin-tuya-panel-kit/download/@tuya-rn/umi-plugin-tuya-panel-kit-0.4.0.tgz#e22272f080832a49bec7bb48902211a2c5930183"
-  integrity sha1-4iJy8ICDKkm+x7tIkCIRosWTAYM=
-
 "@tuya-smart/tuya-panel-patches@^0.59.10":
   version "0.59.10"
   resolved "https://registry.npmjs.org/@tuya-smart/tuya-panel-patches/-/tuya-panel-patches-0.59.10.tgz#d3bafdacf18a5b328c4127ce152c677ba006e65a"
@@ -11670,6 +11665,11 @@ umi-plugin-react-native@^0.4.1:
     react-native-web "^0.14.10"
     react-native-web-linear-gradient "^1.1.1"
     react-native-web-maps "^0.3.0"
+
+umi-plugin-tuya-panel-kit@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.nlark.com/umi-plugin-tuya-panel-kit/download/umi-plugin-tuya-panel-kit-0.4.0.tgz#fe353001d54d2ae3df57bc9858c5240793f67b84"
+  integrity sha1-/jUwAdVNKuPfV7yYWMUkB5P2e4Q=
 
 umi@^3.4.24:
   version "3.4.24"
