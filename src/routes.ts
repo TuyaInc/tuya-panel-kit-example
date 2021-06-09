@@ -38,6 +38,7 @@ import Collapsible from './pages/presentation/collapsible';
 import Divider from './pages/presentation/divider';
 import LinearGradient from './pages/presentation/linear-gradient';
 import Progress from './pages/presentation/progress';
+import RadialGradient from './pages/presentation/radial-gradient';
 
 export const routes = [
   // basic
@@ -208,5 +209,10 @@ export const routes = [
     name: Strings.getLang('progress'),
     href: '/presentation/progress',
     component: Progress,
+  },
+  {
+    name: Strings.getLang('radialgradient'),
+    href: '/presentation/radial-gradient',
+    component: RadialGradient,
   },
 ];

@@ -252,6 +252,11 @@ export default {
     progress_space: 'Spacing form',
     progress_dou: 'Double drag form',
     progress_comb: 'Combination form',
+    // radial-gradient
+    radialgradient: 'RadialGradient',
+    radialgradient_y2b: 'Radial gradient from yellow to blue outwards',
+    radialgradient_ryp: 'Radial gradient from red-yellow-pink outward',
+    radialgradient_add: 'Add a radial gradient effect to the panel background in the business',
   },
   zh: {
     // common
@@ -506,5 +511,10 @@ export default {
     progress_space: '间距形式',
     progress_dou: '双边拖动形式',
     progress_comb: '组合形式',
+    // radial-gradient
+    radialgradient: 'RadialGradient 径向渐变',
+    radialgradient_y2b: '向外进行由黄色-蓝色的径向渐变',
+    radialgradient_ryp: '向外进行由红色-黄色-粉色的径向渐变',
+    radialgradient_add: '业务中给面板背景添加径向渐变效果',
   },
 };
