@@ -2,13 +2,14 @@ import React, { useMemo } from 'react';
 import { SafeAreaView, ScrollView } from 'react-native';
 import { useLocation } from 'umi';
 
-import { usePostedPush } from '@hooks';
+import { usePostedPush, useMessagePush } from '@hooks';
 
 import { TuyaWrapper } from '../components';
 import { routes } from '../routes';
 
 export default ({ children }) => {
   const push = usePostedPush();
+  useMessagePush();
   const location = useLocation();
   const isHome = location.pathname === '/';
   const title = useMemo(() => routes.find(route => route.href === location.pathname)?.name, [

@@ -13,6 +13,7 @@
     "build:umi": "umi build",
     "lint": "prettier --write '**/*.{js,jsx,ts,tsx}'",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "patch": "patch-package --patch-dir node_modules/@tuya-smart/tuya-panel-patches/patches",
     "readResource": "node scripts/read.js",
     "release:init": "standard-version --first-release -t @template/basic-ts-navigation@",
     "release:major:pre": "standard-version --release-as major --prerelease rc --skip.tag=true",
