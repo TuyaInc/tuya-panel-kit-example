@@ -247,6 +247,11 @@ export default {
     lineargradient: 'LinearGradient',
     lineargradient_two: 'Two vertical gradients',
     lineargradient_obl: 'Oblique three-stage gradient',
+    // progress
+    progress: 'Progress',
+    progress_space: 'Spacing form',
+    progress_dou: 'Double drag form',
+    progress_comb: 'Combination form',
   },
   zh: {
     // common
@@ -496,5 +501,10 @@ export default {
     lineargradient: 'LinearGradient 线性渐变',
     lineargradient_two: '垂直两段渐变',
     lineargradient_obl: '斜向三段渐变',
+    // progress
+    progress: 'Progress 进度条',
+    progress_space: '间距形式',
+    progress_dou: '双边拖动形式',
+    progress_comb: '组合形式',
   },
 };

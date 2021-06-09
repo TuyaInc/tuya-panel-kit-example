@@ -37,6 +37,7 @@ import CircleView from './pages/presentation/circle-view';
 import Collapsible from './pages/presentation/collapsible';
 import Divider from './pages/presentation/divider';
 import LinearGradient from './pages/presentation/linear-gradient';
+import Progress from './pages/presentation/progress';
 
 export const routes = [
   // basic
@@ -202,5 +203,10 @@ export const routes = [
     name: Strings.getLang('lineargradient'),
     href: '/presentation/linear-gradient',
     component: LinearGradient,
+  },
+  {
+    name: Strings.getLang('progress'),
+    href: '/presentation/progress',
+    component: Progress,
   },
 ];
