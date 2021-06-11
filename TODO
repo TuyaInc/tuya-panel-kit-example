@@ -1,0 +1,19 @@
+### react-native-web渲染有问题的组件
+
+1. Motion: PullUp ScalePullDown
+2. DatePicker
+3. PickerView
+4. TimerPicker
+5. Modal中picker相关
+6. Popu中picker相关
+7. Tab
+
+主要是picker，react-native内置的picker渲染到web上会变成select
+
+### 静态资源优化
+
+cdn: 配置publicPath指向jsDelivr/github
+
+### 样式优化
+
+各种细微的优化，体验优化～

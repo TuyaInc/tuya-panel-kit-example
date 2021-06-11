@@ -3,6 +3,7 @@ import { Button, Utils } from 'tuya-panel-kit';
 
 import { ListView } from '@components';
 import Strings from '@i18n';
+import { View } from 'react-native';
 
 const { convertX } = Utils.RatioUtils;
 
@@ -21,7 +22,7 @@ export default () => {
         {
           title: Strings.getLang('with_text_icon_button'),
           content: (
-            <>
+            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
               <Button icon="selected" iconSize={24} text={Strings.getLang('text')} />
               <Button
                 icon="selected"
@@ -32,7 +33,7 @@ export default () => {
                   marginLeft: convertX(27),
                 }}
               />
-            </>
+            </View>
           ),
         },
       ]}
