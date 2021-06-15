@@ -9619,6 +9619,21 @@ react-native-web-maps@^0.3.0:
   dependencies:
     react-google-maps "^9.4.5"
 
+react-native-web@0.16.3:
+  version "0.16.3"
+  resolved "https://registry.nlark.com/react-native-web/download/react-native-web-0.16.3.tgz#98a846b3ff83c694c4cc967d5e4504640b7abb19"
+  integrity sha1-mKhGs/+DxpTEzJZ9XkUEZAt6uxk=
+  dependencies:
+    array-find-index "^1.0.2"
+    create-react-class "^15.7.0"
+    deep-assign "^3.0.0"
+    fbjs "^3.0.0"
+    hyphenate-style-name "^1.0.4"
+    inline-style-prefixer "^6.0.0"
+    normalize-css-color "^1.0.2"
+    prop-types "^15.6.0"
+    react-timer-mixin "^0.13.4"
+
 react-native-web@^0.14.10:
   version "0.14.13"
   resolved "https://registry.nlark.com/react-native-web/download/react-native-web-0.14.13.tgz#b4cc33c64ce0d5258ccac82acf0b916d95e23ad4"
@@ -9630,21 +9645,6 @@ react-native-web@^0.14.10:
     fbjs "^1.0.0"
     hyphenate-style-name "^1.0.3"
     inline-style-prefixer "^5.1.0"
-    normalize-css-color "^1.0.2"
-    prop-types "^15.6.0"
-    react-timer-mixin "^0.13.4"
-
-react-native-web@^0.16.3:
-  version "0.16.3"
-  resolved "https://registry.nlark.com/react-native-web/download/react-native-web-0.16.3.tgz#98a846b3ff83c694c4cc967d5e4504640b7abb19"
-  integrity sha1-mKhGs/+DxpTEzJZ9XkUEZAt6uxk=
-  dependencies:
-    array-find-index "^1.0.2"
-    create-react-class "^15.7.0"
-    deep-assign "^3.0.0"
-    fbjs "^3.0.0"
-    hyphenate-style-name "^1.0.4"
-    inline-style-prefixer "^6.0.0"
     normalize-css-color "^1.0.2"
     prop-types "^15.6.0"
     react-timer-mixin "^0.13.4"
