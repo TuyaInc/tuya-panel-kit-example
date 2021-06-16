@@ -8,6 +8,7 @@ type ListItem = {
   title: string;
   content: React.ReactNode;
   itemStyle?: StyleProp<ViewStyle>;
+  contentStyle?: StyleProp<ViewStyle>;
 };
 
 export interface ListViewProps {
@@ -27,6 +28,7 @@ export const ListView = ({ list, contentPadding = true, contentCenter = false }:
               styles.list_item_content,
               contentPadding ? { paddingHorizontal: convertX(24) } : {},
               contentCenter ? { flex: 1, justifyContent: 'center', flexDirection: 'row' } : {},
+              item.contentStyle,
             ]}
           >
             {item.content}

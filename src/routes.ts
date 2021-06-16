@@ -6,6 +6,7 @@ import BrickButton from './pages/basic/brick-button';
 import Button from './pages/basic/button';
 import Iconfont from './pages/basic/icon-font';
 import Motion from './pages/basic/motion';
+import SliderProgress from './pages/basic/slider-progress';
 import TYText from './pages/basic/tytext';
 import UnitText from './pages/basic/unit-text';
 // data-entry
@@ -71,6 +72,11 @@ export const routes = [
     name: Strings.getLang('motion'),
     href: '/basic/motion',
     component: Motion,
+  },
+  {
+    name: Strings.getLang('slider_progress'),
+    href: '/basic/slider-progress',
+    component: SliderProgress,
   },
   {
     name: Strings.getLang('tytext'),

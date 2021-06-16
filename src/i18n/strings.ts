@@ -40,6 +40,10 @@ export default {
     motion_scalefadeout: 'Zoom in and fade in/down to fade out',
     motion_pushdown: 'Pull-down push',
     motion_toast: 'No operation zoom in/out',
+    // slider-progress
+    slider_progress: 'SliderProgress',
+    slider_progress_uni: 'Unilateral progress bar',
+    slider_progress_bil: 'Bilateral progress bar',
     // tytext
     tytext: 'TYText',
     tytext_basic_style: 'Basic style',
@@ -348,6 +352,10 @@ export default {
     motion_scalefadeout: '放大淡入/下滑淡出',
     motion_pushdown: '下拉上推',
     motion_toast: '无操作放大淡入/缩小淡出',
+    // slider-progress
+    slider_progress: 'SliderProgress 滑动进度条',
+    slider_progress_uni: '单边进度条',
+    slider_progress_bil: '双边进度条',
     // tytext
     tytext: 'TYText 文字',
     tytext_basic_style: '基本样式',
