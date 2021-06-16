@@ -7,6 +7,7 @@ import { DevInfo, DpValue, Theme, TYSdk } from 'tuya-panel-kit';
 import { Connect } from '@components';
 import { theme } from '@config';
 import { actions } from '@models';
+import { ScrollView } from 'react-native';
 
 interface Props {
   devInfo: DevInfo;
@@ -84,7 +85,7 @@ const composeLayout = (store: Store, component: React.ComponentType) => {
           <Theme theme={theme}>
             <Connect mapStateToProps={_.identity}>
               {({ mapStateToProps, ...props }: { mapStateToProps: any; [prop: string]: any }) => {
-                const hasInit = Object.keys(props.dpState).length > 0;
+                const hasInit = 1;
                 return hasInit ? <NavigatorLayout {...props} /> : null;
               }}
             </Connect>

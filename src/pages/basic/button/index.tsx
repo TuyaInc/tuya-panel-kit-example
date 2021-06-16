@@ -14,7 +14,13 @@ export default () => {
         {
           title: Strings.getLang('pure_text_button'),
           content: (
-            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'flex-start' }}>
+            <View
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'flex-start',
+              }}
+            >
               <Button text={Strings.getLang('click_me_once')} />
             </View>
           ),
@@ -22,7 +28,13 @@ export default () => {
         {
           title: Strings.getLang('pure_icon_button'),
           content: (
-            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'flex-start' }}>
+            <View
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'flex-start',
+              }}
+            >
               <Button icon="power" />
             </View>
           ),
@@ -30,7 +42,7 @@ export default () => {
         {
           title: Strings.getLang('with_text_icon_button'),
           content: (
-            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'flex-start' }}>
+            <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start' }}>
               <Button icon="selected" iconSize={24} text={Strings.getLang('text')} />
               <Button
                 icon="selected"

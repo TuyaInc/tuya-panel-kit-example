@@ -1,12 +1,20 @@
 ### react-native-web渲染有问题的组件
 
 1. Motion: PullUp ScalePullDown
-2. DatePicker
-3. PickerView
-4. TimerPicker
-5. Modal中picker相关
-6. Popu中picker相关
 7. Tab
+
+### 面板有问题的
+
+1. Motion
+2. Dialog
+3. GlobalToast
+4. Modal
+5. Notifaction
+6. Popup
+7. Tips
+8. ToastView
+9. Tabs
+10. TopBar
 
 主要是picker，react-native内置的picker渲染到web上会变成select
 

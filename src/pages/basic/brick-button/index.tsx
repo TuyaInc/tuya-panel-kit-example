@@ -1,8 +1,10 @@
 import React from 'react';
-import { BrickButton } from 'tuya-panel-kit';
+import { BrickButton, Utils } from 'tuya-panel-kit';
 
 import { ListView } from '@components';
 import Strings from '@i18n';
+
+const { convertX: cx } = Utils.RatioUtils;
 
 export default () => {
   return (
@@ -16,6 +18,9 @@ export default () => {
         },
         {
           title: Strings.getLang('brick_button_text'),
+          itemStyle: {
+            marginTop: cx(50),
+          },
           content: (
             <BrickButton
               loading={true}

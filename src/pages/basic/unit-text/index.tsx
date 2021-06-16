@@ -15,12 +15,11 @@ export default () => {
           content: (
             <View
               style={{
+                display: 'flex',
                 flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'center',
               }}
             >
-              <UnitText value=" " unit="%" unitColor="green" />
+              <UnitText value=" " unit="%" unitColor="green" style={{ marginLeft: 20 }} />
               <UnitText
                 value=" "
                 unit={TuyaRNSvgs.celsius}
@@ -35,12 +34,11 @@ export default () => {
           content: (
             <View
               style={{
+                display: 'flex',
                 flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'center',
               }}
             >
-              <UnitText value=" " size={88} unit="%" unitColor="green" />
+              <UnitText value=" " size={88} unit="%" unitColor="green" style={{ marginLeft: 20 }} />
               <UnitText
                 value=" "
                 size={48}
@@ -57,9 +55,8 @@ export default () => {
           content: (
             <View
               style={{
+                display: 'flex',
                 flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'center',
               }}
             >
               <UnitText

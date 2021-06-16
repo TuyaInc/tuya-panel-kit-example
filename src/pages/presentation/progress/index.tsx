@@ -1,13 +1,18 @@
 import React from 'react';
-import { Progress } from 'tuya-panel-kit';
+import { Progress, Utils } from 'tuya-panel-kit';
 
 import { ListView } from '@components';
 import Strings from '@i18n';
+
+const { convertX: cx } = Utils.RatioUtils;
 
 export default () => {
   return (
     <ListView
       contentCenter={true}
+      nthItemStyle={{
+        marginTop: cx(90),
+      }}
       list={[
         {
           title: Strings.getLang('text_basic'),

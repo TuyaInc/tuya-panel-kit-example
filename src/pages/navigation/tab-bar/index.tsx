@@ -27,7 +27,6 @@ export default () => {
           title: Strings.getLang('tabbar_basic'),
           content: (
             <TabBar
-              style={{ flex: 1 }}
               tabs={tabs}
               activeKey={tab}
               onChange={value => setTab(value)}

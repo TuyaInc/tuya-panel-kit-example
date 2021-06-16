@@ -1,14 +1,19 @@
 import React from 'react';
 import { View } from 'react-native';
-import { IconFont, RotationView, TYText } from 'tuya-panel-kit';
+import { IconFont, RotationView, TYText, Utils } from 'tuya-panel-kit';
 
 import { ListView } from '@components';
 import Strings from '@i18n';
+
+const { convertX: cx } = Utils.RatioUtils;
 
 export default () => {
   return (
     <ListView
       contentCenter={true}
+      nthItemStyle={{
+        marginTop: cx(180),
+      }}
       list={[
         {
           title: Strings.getLang('rotationview_round'),

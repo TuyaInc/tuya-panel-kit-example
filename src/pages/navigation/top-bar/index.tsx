@@ -1,9 +1,11 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import React from 'react';
-import { TopBar, TYSdk } from 'tuya-panel-kit';
+import { TopBar, TYSdk, Utils } from 'tuya-panel-kit';
 
 import { ListView } from '@components';
 import Strings from '@i18n';
+
+const { convertX: cx } = Utils.RatioUtils;
 
 export default () => {
   const radialBackground = {
@@ -31,6 +33,9 @@ export default () => {
     <ListView
       contentPadding={false}
       contentCenter={true}
+      nthItemStyle={{
+        marginTop: cx(40),
+      }}
       list={[
         {
           title: Strings.getLang('topbar_basic_split'),

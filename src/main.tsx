@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar } from 'react-native';
+import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
 import { createNavigator, GlobalTheme, NavigationRoute } from 'tuya-panel-kit';
 
 import composeLayout from './composeLayout';
@@ -9,10 +9,18 @@ import { routes } from './routes';
 
 console.disableYellowBox = true;
 
+const withScroll = (Compnent: React.ComponentType) => () => (
+  <SafeAreaView style={{ flex: 1 }}>
+    <ScrollView style={{ flex: 1 }}>
+      <Compnent />
+    </ScrollView>
+  </SafeAreaView>
+);
+
 const router: NavigationRoute[] = [
   {
     name: 'main',
-    component: Home,
+    component: withScroll(Home),
     options: {
       title: 'Home',
       renderStatusBar: () => <StatusBar barStyle="default" />,
@@ -20,7 +28,7 @@ const router: NavigationRoute[] = [
   },
   ...routes.map(route => ({
     name: route.href,
-    component: route.component,
+    component: withScroll(route.component),
     options: {
       title: route.name,
       renderStatusBar: () => <StatusBar barStyle="default" />,

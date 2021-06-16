@@ -17,6 +17,7 @@
         "@components": "./src/components",
         "@config": "./src/config",
         "@i18n": "./src/i18n",
+        "@hooks": "./src/hooks",
         "@models": "./src/models",
         "@res": "./src/res",
         "@utils": "./src/utils",

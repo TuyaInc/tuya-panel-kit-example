@@ -1,10 +1,12 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
-import { Tabs, TYListItem } from 'tuya-panel-kit';
+import { Tabs, TYListItem, Utils } from 'tuya-panel-kit';
 
 import { ListView } from '@components';
-import { useSetParticalState } from '@hooks';
+import { useSetParticalState } from '@hooks/useSetParticalState';
 import Strings from '@i18n';
+
+const { convertX: cx } = Utils.RatioUtils;
 
 const Panel = ({ title, largeData = null, ...rest }) => {
   return (
@@ -58,6 +60,9 @@ export default () => {
         },
         {
           title: Strings.getLang('tabs_screen'),
+          itemStyle: {
+            marginTop: cx(40),
+          },
           content: (
             <Tabs
               activeKey={state.activeKey2}
@@ -68,10 +73,16 @@ export default () => {
         },
         {
           title: Strings.getLang('tabs_basic_stateless'),
+          itemStyle: {
+            marginTop: cx(40),
+          },
           content: <Tabs dataSource={state.d2} />,
         },
         {
           title: Strings.getLang('tabs_tabcontentsin'),
+          itemStyle: {
+            marginTop: cx(40),
+          },
           content: (
             <Tabs.TabContent
               preload={false}
@@ -89,6 +100,9 @@ export default () => {
         },
         {
           title: Strings.getLang('tabs_tabcontenttab'),
+          itemStyle: {
+            marginTop: cx(40),
+          },
           content: (
             <Tabs
               activeKey={state.activeKey1}
@@ -121,6 +135,9 @@ export default () => {
         },
         {
           title: Strings.getLang('tabs_screen2'),
+          itemStyle: {
+            marginTop: cx(40),
+          },
           content: (
             <Tabs
               activeKey={state.activeKey2}
@@ -135,6 +152,9 @@ export default () => {
         },
         {
           title: Strings.getLang('tabs_nested'),
+          itemStyle: {
+            marginTop: cx(40),
+          },
           content: (
             <Tabs
               tabPosition="bottom"

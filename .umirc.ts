@@ -1,9 +1,9 @@
-import { defineConfig } from 'umi';
+import { defineConfig, IConfig } from 'umi';
 import { join } from 'path'
 
 const isProd = process.env.NODE_ENV === 'production';
 
-const flatDep = ['react-native-gesture-handler', 'react-native-svg']
+const flatDep = ['react-native-gesture-handler',]
 
 export default defineConfig({
   history: { type: 'hash' },
@@ -19,6 +19,7 @@ export default defineConfig({
     "@components": join(__dirname, "./src/components"),
     "@hooks": join(__dirname, "./src/hooks"),
     "@i18n": join(__dirname, "./src/i18n"),
+    'react-native-svg': 'react-native-svg-web'
   },
   fastRefresh: {},
   // code split
@@ -58,4 +59,4 @@ export default defineConfig({
   publicPath: isProd
     ? '//cdn.jsdelivr.net/gh/youngjuning/tuya-panel-kit-example@gh-pages/'
     : '/',
-});
+} as IConfig);

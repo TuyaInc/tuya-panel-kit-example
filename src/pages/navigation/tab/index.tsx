@@ -36,7 +36,6 @@ export default () => {
       onChange={value => setState({ tab: value })}
       tabsContainerStyle={{
         height: 60,
-        width: 375,
         alignItems: 'center',
         justifyContent: 'center',
       }}

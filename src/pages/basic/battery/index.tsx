@@ -62,6 +62,7 @@ export default () => {
           content: <Battery value={40} size={30} theme={{ batteryColor: 'rgba(167,98,43,.5)' }} />,
           contentStyle: {
             width: cx(100),
+            marginTop: cx(40),
           },
         },
         {
@@ -69,6 +70,10 @@ export default () => {
           content: <Battery value={60} size={30} onCalcColor={calcColor} middleColor="#999" />,
           contentStyle: {
             width: cx(100),
+            marginTop: cx(40),
+          },
+          itemStyle: {
+            marginTop: cx(20),
           },
         },
       ]}

@@ -1,8 +1,10 @@
 import React from 'react';
-import { ControllerBar } from 'tuya-panel-kit';
+import { ControllerBar, Utils } from 'tuya-panel-kit';
 
 import { ListView } from '@components';
 import Strings from '@i18n';
+
+const { convertX: cx } = Utils.RatioUtils;
 
 export default () => {
   return (
@@ -23,6 +25,9 @@ export default () => {
         },
         {
           title: Strings.getLang('controllerbar_base'),
+          itemStyle: {
+            marginTop: cx(30),
+          },
           content: (
             <ControllerBar.Group style={{ marginTop: 20, flex: 1 }}>
               <ControllerBar
@@ -44,6 +49,9 @@ export default () => {
         },
         {
           title: Strings.getLang('controllerbar_swiper'),
+          itemStyle: {
+            marginTop: cx(30),
+          },
           content: (
             <ControllerBar.Group
               type="swiper"
@@ -74,6 +82,9 @@ export default () => {
         },
         {
           title: Strings.getLang('controllerbar_divide'),
+          itemStyle: {
+            marginTop: cx(30),
+          },
           content: (
             <ControllerBar.Group type="divide" style={{ marginTop: 20, flex: 1 }}>
               <ControllerBar

@@ -1,11 +1,19 @@
 ### tuya-panel-kit-docs-demo
 
+#### 启动 h5
+
 ```bash
 yarn
 
 yarn start:umi
 
 yarn build:umi
+```
+
+#### 启动面板
+
+```bash
+yarn start
 ```
 
 ##### 添加新组件

@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import { Tips } from 'tuya-panel-kit';
 
 import { BlockList, Svg } from '@components';
-import { useSetParticalState } from '@hooks';
+import { useSetParticalState } from '@hooks/useSetParticalState';
 import Strings from '@i18n';
 
 export default () => {
