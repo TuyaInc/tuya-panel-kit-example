@@ -13,16 +13,24 @@ export default () => {
       list={[
         {
           title: Strings.getLang('pure_text_button'),
-          content: <Button text={Strings.getLang('click_me_once')} />,
+          content: (
+            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'flex-start' }}>
+              <Button text={Strings.getLang('click_me_once')} />
+            </View>
+          ),
         },
         {
           title: Strings.getLang('pure_icon_button'),
-          content: <Button icon="power" />,
+          content: (
+            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'flex-start' }}>
+              <Button icon="power" />
+            </View>
+          ),
         },
         {
           title: Strings.getLang('with_text_icon_button'),
           content: (
-            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
+            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'flex-start' }}>
               <Button icon="selected" iconSize={24} text={Strings.getLang('text')} />
               <Button
                 icon="selected"
