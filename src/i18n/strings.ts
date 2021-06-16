@@ -12,6 +12,11 @@ export default {
     text_mul: 'multiple selection',
 
     // basic
+    // battery
+    battery: 'Battery',
+    battery_power: 'Power {0}%',
+    battery_power_cus: 'Power {0}%（custom theme）',
+    battery_power_mod: 'Power {0}% (modify the electricity color distribution rules)',
     // button
     button: 'Button',
     pure_text_button: 'Plain text button',
@@ -315,6 +320,11 @@ export default {
     text_mul: '多选',
 
     // basic
+    // battery
+    battery: 'Battery 电池',
+    battery_power: '电量 {0}%',
+    battery_power_cus: '电量 {0}%（本地主题）',
+    battery_power_mod: '电量 {0}% (修改电量颜色分配规则)',
     // button
     button: 'Button 按钮',
     pure_text_button: '纯文本按钮',

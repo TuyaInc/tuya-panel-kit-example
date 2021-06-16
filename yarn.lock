@@ -1353,15 +1353,15 @@
   resolved "https://registry.nlark.com/@types/scheduler/download/@types/scheduler-0.16.1.tgz?cache=0&sync_timestamp=1621242704081&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fscheduler%2Fdownload%2F%40types%2Fscheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
   integrity sha1-GIRSBehv8AOFF6q3oYpiprn3EnU=
 
-"@types/tuya-panel-kit@^4.0.2":
-  version "4.0.2"
-  resolved "https://registry.npm.taobao.org/@types/tuya-panel-kit/download/@types/tuya-panel-kit-4.0.2.tgz#80e574afcc23f9d4a213adc6e85241c28e44b396"
-  integrity sha1-gOV0r8wj+dSiE63G6FJBwo5Es5Y=
+"@types/tuya-panel-kit@^4.0.5":
+  version "4.0.5"
+  resolved "https://registry.nlark.com/@types/tuya-panel-kit/download/@types/tuya-panel-kit-4.0.5.tgz#1a165da4bf746d610409c1b74c6a8e5e6105c3de"
+  integrity sha1-GhZdpL90bWEECcG3TGqOXmEFw94=
   dependencies:
     "@types/react" "*"
     "@types/react-native" "*"
-    react-native-gesture-handler "^1.8.0"
-    react-native-safe-area-context "^3.1.8"
+    react-native-gesture-handler "1.8.0"
+    react-native-safe-area-context "3.1.7"
     react-native-svg "5.5.1"
 
 "@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.2":
@@ -9596,17 +9596,6 @@ react-native-gesture-handler@^1.10.3:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
-react-native-gesture-handler@^1.8.0:
-  version "1.9.0"
-  resolved "https://registry.npm.taobao.org/react-native-gesture-handler/download/react-native-gesture-handler-1.9.0.tgz#e441b1c0277c3fd4ca3e5c58fdd681e2f0ceddf0"
-  integrity sha1-5EGxwCd8P9TKPlxY/daB4vDO3fA=
-  dependencies:
-    "@egjs/hammerjs" "^2.0.17"
-    fbjs "^3.0.0"
-    hoist-non-react-statics "^3.3.0"
-    invariant "^2.2.4"
-    prop-types "^15.7.2"
-
 react-native-iphone-x-helper@^1.2.1:
   version "1.3.1"
   resolved "https://registry.npm.taobao.org/react-native-iphone-x-helper/download/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
@@ -9623,11 +9612,6 @@ react-native-safe-area-context@3.1.7:
   version "3.1.7"
   resolved "https://registry.npm.taobao.org/react-native-safe-area-context/download/react-native-safe-area-context-3.1.7.tgz#fc9e636dfb168f992a2172d363509ce0611a8403"
   integrity sha1-/J5jbfsWj5kqIXLTY1Cc4GEahAM=
-
-react-native-safe-area-context@^3.1.8:
-  version "3.1.9"
-  resolved "https://registry.npm.taobao.org/react-native-safe-area-context/download/react-native-safe-area-context-3.1.9.tgz#48864ea976b0fa57142a2cc523e1fd3314e7247e"
-  integrity sha1-SIZOqXaw+lcUKizFI+H9MxTnJH4=
 
 react-native-safe-area-view@^1.1.1:
   version "1.1.1"
@@ -11752,7 +11736,7 @@ umi-plugin-react-native@^0.4.3:
     react-native-web-maps "^0.3.0"
     rmc-picker "^5.0.10"
 
-umi-plugin-tuya-panel-kit@0.4.0:
+umi-plugin-tuya-panel-kit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.nlark.com/umi-plugin-tuya-panel-kit/download/umi-plugin-tuya-panel-kit-0.4.0.tgz#fe353001d54d2ae3df57bc9858c5240793f67b84"
   integrity sha1-/jUwAdVNKuPfV7yYWMUkB5P2e4Q=

@@ -1,6 +1,7 @@
 import Strings from '@i18n';
 
 // basic
+import Battery from './pages/basic/battery';
 import BrickButton from './pages/basic/brick-button';
 import Button from './pages/basic/button';
 import Iconfont from './pages/basic/icon-font';
@@ -46,6 +47,11 @@ import TYSectionList from './pages/presentation/tysection-list';
 
 export const routes = [
   // basic
+  {
+    name: Strings.getLang('battery'),
+    href: '/basic/battery',
+    component: Battery,
+  },
   {
     name: Strings.getLang('brick_button'),
     href: '/basic/brick-button',
