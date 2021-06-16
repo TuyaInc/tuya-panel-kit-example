@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: yarn install
-      - run: yarn build
+      - run: yarn build:umi
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
