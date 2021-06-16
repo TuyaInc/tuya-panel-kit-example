@@ -8,7 +8,6 @@ import Strings from '@i18n';
 export default () => {
   const [fadeShow, setFadeShow] = React.useState(false);
   const [pullUpShow, setPullUpShow] = React.useState(false);
-  console.log(pullUpShow);
   const [scaleFadeInShow, setScaleFadeInShow] = React.useState(false);
   const contentStyles = {
     width: 375,
@@ -62,11 +61,12 @@ export default () => {
         <View style={contentStyles} />
       </Motion.Fade>
       <Motion.PullUp
-        style={{ position: 'absolute', bottom: 50 }}
+        style={{ position: 'absolute', bottom: 0 }}
+        dropHeight={200}
         show={pullUpShow}
         onHide={() => setPullUpShow(false)}
       >
-        <View style={contentStyles} />
+        <View style={[contentStyles, { bottom: 0 }]} />
       </Motion.PullUp>
       <Motion.ScaleFadeIn
         style={{ position: 'absolute', bottom: 50 }}

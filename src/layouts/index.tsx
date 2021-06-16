@@ -1,8 +1,7 @@
 import React, { useMemo } from 'react';
-import { SafeAreaView, ScrollView } from 'react-native';
+import { ScrollView, SafeAreaView } from 'react-native';
 import { useLocation } from 'umi';
-
-import { usePostedPush, useMessagePush } from '@hooks';
+import { useMessagePush, usePostedPush } from '@hooks';
 
 import { TuyaWrapper } from '../components';
 import { routes } from '../routes';

@@ -1,7 +1,7 @@
 import { defineConfig } from 'umi';
 import { join } from 'path'
 
-const flatDep = ['react-native-gesture-handler', 'react-native-svg', 'react-native-web']
+const flatDep = ['react-native-gesture-handler', 'react-native-svg']
 
 export default defineConfig({
   history: { type: 'hash' },
