@@ -1,7 +1,8 @@
 import { defineConfig } from 'umi';
 import { join } from 'path'
 
-const flatDep = ['react-native-gesture-handler', 'react-native-svg', 'react-native-web']
+const flatDep = ['react-native-gesture-handler', 'react-native-svg', 'react-native-web'];
+const isProd = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
   history: { type: 'hash' },
@@ -52,4 +53,8 @@ export default defineConfig({
   },
   // https://umijs.org/zh-CN/config#chunks
   chunks: ['vendors', 'umi-plugin-react-native', 'tuya-panel-kit', 'umi'],
+  base: isProd ? '/tuya-panel-kit-example' : '/', // router base
+  publicPath: isProd
+    ? '//cdn.jsdelivr.net/gh/youngjuning/tuya-panel-kit-example@gh-pages/'
+    : '/',
 });
