@@ -8,6 +8,7 @@ export default () => {
   const [time, setTime] = React.useState({ startTime: 0, endTime: 0 });
   return (
     <ListView
+      contentPadding={false}
       list={[
         {
           title: Strings.getLang('timepicker_basic'),
@@ -16,6 +17,7 @@ export default () => {
               style={{ marginTop: 10 }}
               startTime={time.startTime}
               endTime={time.endTime}
+              prefixPosition="right"
               onTimerChange={(startTime, endTime) => setTime({ startTime, endTime })}
             />
           ),

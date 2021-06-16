@@ -69,6 +69,7 @@ export default () => {
               title: Strings.getLang('popup_time_title'),
               cancelText: Strings.getLang('text_cancel'),
               confirmText: Strings.getLang('text_confirm'),
+              prefixPosition: 'right',
               startTime: state.timerPickerValue[0],
               endTime: state.timerPickerValue[1],
               is12Hours: true,

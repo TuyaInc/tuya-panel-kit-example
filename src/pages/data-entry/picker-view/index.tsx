@@ -34,6 +34,7 @@ export default () => {
 
   return (
     <ListView
+      contentPadding={false}
       list={[
         {
           title: Strings.getLang('pickerview_basic'),
@@ -55,7 +56,7 @@ export default () => {
         {
           title: Strings.getLang('pickerview_mul'),
           content: (
-            <View>
+            <View style={{ display: 'flex', flexDirection: 'row' }}>
               {weeks.map((pItem, pIndex) => (
                 <Picker
                   key={pItem.key}

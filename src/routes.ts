@@ -9,19 +9,19 @@ import TYText from './pages/basic/tytext';
 import UnitText from './pages/basic/unit-text';
 // data-entry
 import Checkbox from './pages/data-entry/checkbox';
-import DatePicker from './pages/data-entry/date-picker';
-import PickerView from './pages/data-entry/picker-view';
+// import DatePicker from './pages/data-entry/date-picker';
+// import PickerView from './pages/data-entry/picker-view';
 import Slider from './pages/data-entry/slider';
 import Stepper from './pages/data-entry/stepper';
 import SwitchButton from './pages/data-entry/switch-button';
-import TimerPicker from './pages/data-entry/timer-picker';
+// import TimerPicker from './pages/data-entry/timer-picker';
 // feedback
 import Dialog from './pages/feedback/dialog';
 import GlobalToast from './pages/feedback/global-toast';
-import Modal from './pages/feedback/modal';
+// import Modal from './pages/feedback/modal';
 import Notification from './pages/feedback/notification';
 import NotificationLegacy from './pages/feedback/notification-legacy';
-import Popup from './pages/feedback/popup';
+// import Popup from './pages/feedback/popup';
 import Swipeout from './pages/feedback/swipeout';
 import Tips from './pages/feedback/tips';
 import ToastView from './pages/feedback/toast-view';
@@ -85,12 +85,12 @@ export const routes = [
   {
     name: Strings.getLang('datepicker'),
     href: '/data-entry/date-picker',
-    component: DatePicker,
+    // component: DatePicker,
   },
   {
     name: Strings.getLang('pickerview'),
     href: '/data-entry/picker-view',
-    component: PickerView,
+    // component: PickerView,
   },
   {
     name: Strings.getLang('slider'),
@@ -110,7 +110,7 @@ export const routes = [
   {
     name: Strings.getLang('timepicker'),
     href: '/data-entry/timer-picker',
-    component: TimerPicker,
+    // component: TimerPicker,
   },
   // feedback
   {
@@ -126,7 +126,7 @@ export const routes = [
   {
     name: Strings.getLang('modal'),
     href: '/feedback/modal',
-    component: Modal,
+    // component: Modal,
   },
   {
     name: Strings.getLang('notification'),
@@ -141,7 +141,7 @@ export const routes = [
   {
     name: Strings.getLang('popup'),
     href: '/feedback/popup',
-    component: Popup,
+    // component: Popup,
   },
   {
     name: Strings.getLang('swipeout'),

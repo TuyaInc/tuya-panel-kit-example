@@ -9,6 +9,7 @@ export default () => {
   const [selectDate, setDate] = React.useState(new Date());
   return (
     <ListView
+      contentPadding={false}
       list={[
         {
           title: Strings.getLang('datepicker_control'),
