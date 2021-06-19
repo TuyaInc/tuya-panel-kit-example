@@ -5,7 +5,7 @@ import { useHistory } from 'umi';
 export const useMessagePush = () => {
   const history = useHistory();
   useEffect(() => {
-    window.addEventListener('message', event => {
+    const handle = event => {
       const { method, data } = event.data;
       if (method === 'navigate' && data) {
         const isEN = /^\/en/.test(data);
@@ -19,6 +19,10 @@ export const useMessagePush = () => {
           history.push(data);
         }
       }
-    });
+    };
+    window.addEventListener('message', handle);
+    return () => {
+      window.removeEventListener('message', handle);
+    };
   }, [history]);
 };
