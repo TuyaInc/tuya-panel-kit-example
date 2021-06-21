@@ -15,3 +15,8 @@ export const locale = {
     return locale;
   },
 };
+
+const isProd = process.env.NODE_ENV === 'production';
+if (isProd) {
+  window.console.log = () => '';
+}

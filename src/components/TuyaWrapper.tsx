@@ -4,14 +4,24 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import React from 'react';
 import {
-    Dimensions, Platform, StyleProp, StyleSheet, TextProps, View, ViewProps
+  Dimensions,
+  Platform,
+  StyleProp,
+  StyleSheet,
+  TextProps,
+  View,
+  ViewProps,
 } from 'react-native';
 import {
-    GlobalToast, Notification, Theme as ThemeProvider, TopBar, TYSdk, Utils
+  GlobalToast,
+  Notification,
+  Theme as ThemeProvider,
+  TopBar,
+  TYSdk,
+  Utils,
 } from 'tuya-panel-kit';
 import MaskView from 'tuya-panel-kit/lib/components/modal/portalOut';
 
-console.log('[TuyaWrapper]', TYSdk);
 const TYEvent = TYSdk.event;
 
 const { get } = Utils.CoreUtils;
@@ -139,9 +149,7 @@ class FullView extends React.Component<Props, State> {
         onClose={() => this.setState({ showNotification: false })}
         motionConfig={{ dropHeight }}
         {...this.state.information}
-        // eslint-disable-next-line react/destructuring-assignment
         show={this.state.showNotification}
-        // eslint-disable-next-line react/destructuring-assignment
         motionStyle={[{ zIndex: 99 }, this.state.motionStyle]}
       />
     );
@@ -150,15 +158,11 @@ class FullView extends React.Component<Props, State> {
   // 渲染全局成功 Toast
   renderGlobalToast() {
     return (
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       <GlobalToast
         onFinish={() => this.setState({ showToast: false })}
-        // eslint-disable-next-line react/destructuring-assignment
         {...this.state.successInformation}
-        // eslint-disable-next-line react/destructuring-assignment
         show={this.state.showToast}
-        // eslint-disable-next-line react/destructuring-assignment
         style={[{ zIndex: 999 }, this.state.successStyle]}
       />
     );
@@ -201,7 +205,6 @@ class FullView extends React.Component<Props, State> {
           title={title}
           titleStyle={topbarTextStyle}
           color={color}
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           actions={showMenu ? actions : []}
           onBack={() => this.onBack('left')}
@@ -214,7 +217,6 @@ class FullView extends React.Component<Props, State> {
 
   render() {
     const { style, theme } = this.props;
-    // eslint-disable-next-line react/destructuring-assignment
     const background = this.props.background || get(theme, 'global.background', '#f8f8f8');
     const isBgColor = typeof background === 'string';
     return (
@@ -222,7 +224,6 @@ class FullView extends React.Component<Props, State> {
         {this.renderNotification()}
         {this.renderTopBar()}
         {this.renderGlobalToast()}
-        {/* eslint-disable-next-line react/destructuring-assignment */}
         {this.props.children}
         <div id="root" style={{}}>
           <MaskView />
@@ -256,9 +257,6 @@ export const TuyaWrapper = ({ onBack, children, hideTopbar, title }: TuyaWrapper
         // @ts-ignore
         overflow: 'hidden',
         scrollbarWidth: 'none' as const,
-        '&::-webkit-scrollbar': {
-          display: 'none',
-        },
         width,
         height,
       }}

@@ -1,5 +1,5 @@
+import { join } from 'path';
 import { defineConfig, IConfig } from 'umi';
-import { join } from 'path'
 
 const isProd = process.env.NODE_ENV === 'production';
 
