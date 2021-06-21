@@ -3,6 +3,8 @@
 1. Motion: PullUp ScalePullDown
 7. Tab
 
+主要是picker，react-native内置的picker渲染到web上会变成select (已解决，用fork的rmc-picker)
+
 ### 面板有问题的
 
 1. Motion
@@ -16,7 +18,7 @@
 9. Tabs
 10. TopBar
 
-主要是picker，react-native内置的picker渲染到web上会变成select
+已上全部解决（svg用了web标记，用Iconfont替代）
 
 ### 静态资源优化
 

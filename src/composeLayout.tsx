@@ -7,7 +7,6 @@ import { DevInfo, DpValue, Theme, TYSdk } from 'tuya-panel-kit';
 import { Connect } from '@components';
 import { theme } from '@config';
 import { actions } from '@models';
-import { ScrollView } from 'react-native';
 
 interface Props {
   devInfo: DevInfo;

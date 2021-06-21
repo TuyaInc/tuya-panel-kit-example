@@ -11608,7 +11608,7 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-tuya-panel-kit@^4.5.5:
+tuya-panel-kit@^4.5.6:
   version "4.5.6"
   resolved "https://registry.nlark.com/tuya-panel-kit/download/tuya-panel-kit-4.5.6.tgz#40beb793bc39b75971c0b0f0974605d030801510"
   integrity sha1-QL63k7w5t1lxwLDwl0YF0DCAFRA=

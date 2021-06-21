@@ -2,8 +2,8 @@ import React from 'react';
 import { SliderProgress, Utils } from 'tuya-panel-kit';
 
 import { ListView } from '@components';
-import Strings from '@i18n';
 import { useSetParticalState } from '@hooks/useSetParticalState';
+import Strings from '@i18n';
 
 const { convertX: cx } = Utils.RatioUtils;
 

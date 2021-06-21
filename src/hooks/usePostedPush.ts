@@ -1,6 +1,7 @@
+import { useHistory } from 'umi';
+
 /* eslint-disable no-restricted-globals */
 import Strings from '@i18n';
-import { useHistory } from 'umi';
 
 export const usePostedPush = () => {
   const history = useHistory();

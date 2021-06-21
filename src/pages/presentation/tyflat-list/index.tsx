@@ -1,8 +1,8 @@
 import React from 'react';
+import { View } from 'react-native';
 import { TYFlatList, TYText } from 'tuya-panel-kit';
 
 import Strings from '@i18n';
-import { View } from 'react-native';
 
 export default () => {
   const data = [
