@@ -17,7 +17,7 @@ export default () => {
           content: <BrickButton text="loading" loading={true} />,
         },
         {
-          title: Strings.getLang('brick_button_text'),
+          title: Strings.getLang('brick_button_bg'),
           itemStyle: {
             marginTop: cx(50),
           },

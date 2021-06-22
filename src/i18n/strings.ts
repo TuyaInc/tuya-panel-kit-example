@@ -27,6 +27,7 @@ export default {
     // brick-button
     brick_button: 'BrickButton',
     brick_button_text: 'Text block button',
+    brick_button_bg: 'Gradient background button',
     // icon-font
     iconfont: 'IconFont',
     iconfont_basic_use: 'Basic Usage',
@@ -339,6 +340,7 @@ export default {
     // brick-button
     brick_button: 'BrickButton 块状按钮',
     brick_button_text: '文字块状按钮',
+    brick_button_bg: '渐变背景按钮',
     // icon-font
     iconfont: 'IconFont 图标',
     iconfont_basic_use: '基础用法',

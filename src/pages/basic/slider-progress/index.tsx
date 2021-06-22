@@ -15,13 +15,13 @@ export default () => {
       contentCenter={true}
       list={[
         {
-          title: Strings.getLang('brick_button_text'),
+          title: Strings.getLang('slider_progress_uni'),
           content: (
             <SliderProgress value={state.value} onValueChange={v => setState({ value: v })} />
           ),
         },
         {
-          title: Strings.getLang('brick_button_text'),
+          title: Strings.getLang('slider_progress_bil'),
           itemStyle: {
             marginTop: cx(40),
           },
