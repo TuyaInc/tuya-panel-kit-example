@@ -74,6 +74,10 @@ export default {
     slider_basic: 'Horizontal slider - basic style',
     slider_custom: 'Horizontal slider - custom button',
     silder_vertical: 'Vertical slider',
+    // slider_with_line
+    slider_with_line: 'SliderWithLine',
+    slider_with_line_horizontal: 'Slide the selector horizontally',
+    slider_with_line_vertical: 'Slide the selector vertically',
     // stepper
     stepper: 'Stepper',
     stepper_style1: 'Style 1',
@@ -387,6 +391,10 @@ export default {
     slider_basic: '水平滑动条 - 基础样式',
     slider_custom: '水平滑动条 - 自定义按钮',
     silder_vertical: '竖直滑动条',
+    // slider_with_line
+    slider_with_line: 'SliderWithLine 滑动选择器',
+    slider_with_line_horizontal: '水平滑动选择器',
+    slider_with_line_vertical: '竖直滑动选择器',
     // stepper
     stepper: 'Stepper 步进器',
     stepper_style1: '风格一',

@@ -14,6 +14,7 @@ import Checkbox from './pages/data-entry/checkbox';
 import DatePicker from './pages/data-entry/date-picker';
 import PickerView from './pages/data-entry/picker-view';
 import Slider from './pages/data-entry/slider';
+import SliderWithLine from './pages/data-entry/slider-with-line';
 import Stepper from './pages/data-entry/stepper';
 import SwitchButton from './pages/data-entry/switch-button';
 import TimerPicker from './pages/data-entry/timer-picker';
@@ -108,6 +109,11 @@ export const routes = [
     name: Strings.getLang('slider'),
     href: '/data-entry/slider',
     component: Slider,
+  },
+  {
+    name: Strings.getLang('slider_with_line'),
+    href: '/data-entry/slider-with-line',
+    component: SliderWithLine,
   },
   {
     name: Strings.getLang('stepper'),
