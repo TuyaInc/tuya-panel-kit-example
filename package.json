@@ -34,7 +34,6 @@
     "qs": "^6.10.1",
     "react": "16.8.3",
     "react-addons-shallow-compare": "^15.6.2",
-    "react-modal": "^3.14.3",
     "react-native": "0.59.10",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-safe-area-view": "^1.1.1",
