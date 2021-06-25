@@ -18,8 +18,7 @@ export default defineConfig({
     "@modules": join(__dirname, "./src/modules"),
     "@components": join(__dirname, "./src/components"),
     "@hooks": join(__dirname, "./src/hooks"),
-    "@i18n": join(__dirname, "./src/i18n"),
-    'react-native-svg': 'react-native-svg-web'
+    "@i18n": join(__dirname, "./src/i18n")
   },
   fastRefresh: {},
   // code split

@@ -11915,13 +11915,15 @@ ultron@~1.1.0:
   resolved "https://registry.npm.taobao.org/ultron/download/ultron-1.1.1.tgz#9fe1536a10a664a65266a1e3ccf85fd36302bc9c"
   integrity sha1-n+FTahCmZKZSZqHjzPhf02MCvJw=
 
-umi-plugin-react-native@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.nlark.com/umi-plugin-react-native/download/umi-plugin-react-native-0.4.3.tgz#5edb0632ed2219c0e597d9ffbffe76ad974b07d9"
-  integrity sha1-XtsGMu0iGcDll9n/v/52rZdLB9k=
+umi-plugin-react-native@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/umi-plugin-react-native/-/umi-plugin-react-native-0.5.0.tgz#7053a5811f3e67970a4e7f623e7568fd5493913a"
+  integrity sha512-Ar6CXIsHlhN/V/y3BjYMQ5yRhBWQiwVP3hekZHjp9INQduR2Cxkmeuhc6XDnqvxlVsT87iUnsOcgkTLyBtxWIg==
   dependencies:
     expo-asset "^8.2.1"
     react-art "^17.0.1"
+    react-modal "^3.14.3"
+    react-native-svg-web "^1.0.9"
     react-native-web "^0.14.10"
     react-native-web-linear-gradient "^1.1.1"
     react-native-web-maps "^0.3.0"

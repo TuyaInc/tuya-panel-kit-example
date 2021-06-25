@@ -20,7 +20,7 @@ import {
   TYSdk,
   Utils,
 } from 'tuya-panel-kit';
-import MaskView from './portal/portalOut';
+import MaskView from 'tuya-panel-kit/lib/components/modal/portalOut';
 
 const TYEvent = TYSdk.event;
 
