@@ -1,7 +1,7 @@
 ### react-native-web渲染有问题的组件
 
 1. Motion: PullUp ScalePullDown，react-native-web 版本高于 tuya-panel-kit
-2. Tab
+2. Tab 已解决 （见Motion问题）
 
 主要是picker，react-native内置的picker渲染到web上会变成select (已解决，用fork的rmc-picker)
 
@@ -20,9 +20,12 @@
 
 已上全部解决（svg用了web标记，用Iconfont替代）
 
+Motion 问题
+回退react-native-web版本解决，需要hack react-native/Modal 已解决
+
 ### 静态资源优化
 
-cdn: 配置publicPath指向jsDelivr/github
+cdn: 配置publicPath指向jsDelivr/github 已解决
 
 ### 样式优化
 

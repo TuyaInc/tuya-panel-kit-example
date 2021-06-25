@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable @typescript-eslint/ban-types */
 /* eslint-disable react/static-property-placement */
@@ -226,7 +227,7 @@ class FullView extends React.Component<Props, State> {
         {this.renderGlobalToast()}
         {this.props.children}
         <div id="root" style={{}}>
-          <MaskView />
+          <MaskView key={location?.hash} />
         </div>
       </View>
     );
