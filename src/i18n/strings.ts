@@ -57,6 +57,7 @@ export default {
     // data-entry
     // checkbox
     checkbox: 'Checkbox',
+    checkbox_label: 'Checkbox',
     checkbox_basic: 'Basic Usage',
     checkbox_disable: 'Disable status',
     checkbox_color: 'Custom color and size',
@@ -374,6 +375,7 @@ export default {
     // data-entry
     // checkbox
     checkbox: 'Checkbox 选择框',
+    checkbox_label: '单选框',
     checkbox_basic: '基础使用',
     checkbox_disable: '禁用状态',
     checkbox_color: '自定义颜色和大小',

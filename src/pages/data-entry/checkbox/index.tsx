@@ -14,7 +14,7 @@ export default () => {
           title: Strings.getLang('checkbox_basic'),
           content: (
             <Checkbox checked={checked} onChange={value => setChecked(value)}>
-              复选框
+              {Strings.getLang('checkbox_label')}
             </Checkbox>
           ),
         },
@@ -23,10 +23,10 @@ export default () => {
           content: (
             <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}>
               <Checkbox color="red" checked={false} disabled={true} hideOnUnselect={true}>
-                复选框
+                {Strings.getLang('checkbox_label')}
               </Checkbox>
               <Checkbox checked={true} disabled={true} style={{ marginLeft: 30 }}>
-                复选框
+                {Strings.getLang('checkbox_label')}
               </Checkbox>
             </View>
           ),
@@ -35,7 +35,7 @@ export default () => {
           title: Strings.getLang('checkbox_color'),
           content: (
             <Checkbox size={30} color="red" checked={checked} onChange={value => setChecked(value)}>
-              复选框
+              {Strings.getLang('checkbox_label')}
             </Checkbox>
           ),
         },
@@ -43,7 +43,7 @@ export default () => {
           title: Strings.getLang('checkbox_position'),
           content: (
             <Checkbox reverse={true} checked={checked} onChange={value => setChecked(value)}>
-              复选框
+              {Strings.getLang('checkbox_label')}
             </Checkbox>
           ),
         },
