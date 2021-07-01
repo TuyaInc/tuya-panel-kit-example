@@ -185,7 +185,7 @@ export default () => {
           ),
         },
         {
-          title: Strings.getLang('silder_horizontal_parcel_custom'),
+          title: Strings.getLang('silder_horizontal_number'),
           content: (
             <View style={{ display: 'flex' }}>
               <Slider.Horizontal
