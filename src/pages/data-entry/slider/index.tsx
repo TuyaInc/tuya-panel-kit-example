@@ -162,6 +162,7 @@ export default () => {
                 value={value}
                 style={{ marginBottom: 10 }}
                 thumbTouchSize={{ width: 46, height: 46 }}
+                stepValue={25}
                 thumbStyle={{
                   shadowOffset: {
                     width: 0,
@@ -201,11 +202,11 @@ export default () => {
                 }}
                 value={value}
                 stepValue={25}
-                type="parcel"
                 useNoun={true}
+                minNounStyle={{ backgroundColor: '#f0f' }}
                 maximumValue={100}
                 minimumValue={0}
-                onSlidingComplete={v => setValue(Math.round(v))}
+                onValueChange={value => setValue(value)}
               />
             </View>
           ),
