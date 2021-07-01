@@ -19,6 +19,14 @@ export default () => {
       textStyle: { fontSize: 16 },
     };
   });
+  const [tabRadioCircle, setTabRadioCircle] = React.useState('2');
+  const tabRadiosCircle = Array.from(Array(3), (v, k) => k + 1).map(v => {
+    return {
+      key: `${v}`,
+      title: `Tab${v}`,
+      activeTextStyle: { color: '#FFF' },
+    };
+  });
 
   return (
     <ListView
@@ -42,13 +50,20 @@ export default () => {
               tabs={tabRadios}
               activeKey={tabRadio}
               onChange={value => setTabRadio(value)}
-              style={{
-                borderColor: 'red',
-                backgroundColor: '#000',
-                height: 54,
-                borderRadius: 27,
-                marginTop: 10,
-              }}
+              style={{ marginTop: 10 }}
+            />
+          ),
+        },
+        {
+          title: Strings.getLang('tabbar_radioCircle'),
+          content: (
+            <TabBar
+              type="radioCircle"
+              tabs={tabRadiosCircle}
+              activeKey={tabRadioCircle}
+              onChange={value => setTabRadioCircle(value)}
+              activeColor="#57BCFB"
+              style={{ marginTop: 10 }}
             />
           ),
         },

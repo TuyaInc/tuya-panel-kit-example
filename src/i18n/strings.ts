@@ -73,6 +73,10 @@ export default {
     // slider
     slider: 'Slider',
     slider_basic: 'Horizontal slider - basic style',
+    silder_horizontal_parcel: 'Horizontal parcel type slider',
+    silder_horizontal_parcel_custom: 'Horizontal parcel custom thumb Slider',
+    silder_horizontal_parcel_number: 'Horizontal package with graduated slider',
+    silder_horizontal_number: 'Horizontal graduated slider',
     slider_custom: 'Horizontal slider - custom button',
     silder_vertical: 'Vertical slider',
     // slider_with_line
@@ -95,9 +99,11 @@ export default {
     switchbutton: 'SwitchButton',
     switchbutton_style1: 'Basic style 1',
     switchbutton_style2: 'Basic style 2',
-    switchbutton_style_dark: 'Dark mode',
+    switchbutton_style_basic_text: 'Basic text style',
+    switchbutton_style_icon: 'Icon style',
+    switchbutton_style_thumb: 'Slider animation style',
     switchbutton_style_gradient: 'Gradient style',
-    switchbutton_style_text: 'Text style',
+    switchbutton_style_gradient_text: 'Gradient text style',
     switchbutton_style_uncontrol: 'Uncontrolled switch',
     // time-picker
     timepicker: 'TimerPicker',
@@ -206,6 +212,7 @@ export default {
     tabbar: 'TabBar',
     tabbar_basic: 'Basic usage',
     tabbar_radio: 'radio type',
+    tabbar_radioCircle: 'radioCircle type',
     // tabs
     tabs: 'Tabs',
     tabs_basic: 'Basic Tabs',
@@ -390,6 +397,10 @@ export default {
     pickerview_mul: '多列选择器',
     // slider
     slider: 'Slider 滑动选择器',
+    silder_horizontal_parcel: '水平包裹类型滑动条',
+    silder_horizontal_parcel_custom: '水平包裹自定义滑块滑动条',
+    silder_horizontal_parcel_number: '水平包裹带有刻度滑块',
+    silder_horizontal_number: '水平有刻度滑动条',
     slider_basic: '水平滑动条 - 基础样式',
     slider_custom: '水平滑动条 - 自定义按钮',
     silder_vertical: '竖直滑动条',
@@ -413,9 +424,11 @@ export default {
     switchbutton: 'SwitchButton 开关',
     switchbutton_style1: '基础样式一',
     switchbutton_style2: '基础样式二',
-    switchbutton_style_dark: '深色模式',
+    switchbutton_style_basic_text: '基础文本样式',
+    switchbutton_style_icon: 'icon 样式',
+    switchbutton_style_thumb: '滑块动画样式',
     switchbutton_style_gradient: '渐变样式',
-    switchbutton_style_text: '文本样式',
+    switchbutton_style_gradient_text: '渐变文本样式',
     switchbutton_style_uncontrol: '非受控开关',
     // time-picker
     timepicker: 'TimerPicker 时间段选择器',
@@ -524,6 +537,7 @@ export default {
     tabbar: 'TabBar 标签栏拆分版',
     tabbar_basic: '基础类型',
     tabbar_radio: 'radio 类型',
+    tabbar_radioCircle: 'radioCircle 类型',
     // tabs
     tabs: 'Tabs 纯手势标签栏',
     tabs_basic: '基础 Tabs',
