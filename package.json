@@ -11,6 +11,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "start:umi": "umi dev",
     "build:umi": "umi build",
+    "fetch:gh": "sh scripts/fetch-gh.sh",
     "lint": "prettier --write '**/*.{js,jsx,ts,tsx}'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "patch-package --patch-dir node_modules/@tuya-smart/tuya-panel-patches/patches",
@@ -92,5 +93,6 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "projectId": "2064"
 }

@@ -1,5 +1,8 @@
 ### tuya-panel-kit-docs-demo
 
+pid: mvhcrizelobov3dw
+uiid: 0000017aud
+
 #### 启动 h5
 
 ```bash
@@ -23,3 +26,7 @@ yarn start
 2. 组件用法src/pages
 
 3. 面板路由注册src/routes
+
+### libra发布
+
+详细信息参见 uiid关联 liba项目
