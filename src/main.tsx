@@ -22,7 +22,7 @@ const router: NavigationRoute[] = [
     name: 'main',
     component: withScroll(Home),
     options: {
-      title: 'Home',
+      title: 'Tuya Design',
       renderStatusBar: () => <StatusBar barStyle="default" />,
     },
   },
