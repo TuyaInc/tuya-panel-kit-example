@@ -8,10 +8,13 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - run: yarn install
-      - run: yarn build:umi
+      - run: |
+          cd example
+          yarn add tuya-panel-kit tuya-panel-utils tuya-panel-theme --registry=https://registry.npmjs.org
+          DEV_MODE=umi yarn umi build
+        
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./example/dist

@@ -1557,10 +1557,10 @@
   resolved "https://registry.nlark.com/@types/scheduler/download/@types/scheduler-0.16.1.tgz?cache=0&sync_timestamp=1621242704081&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fscheduler%2Fdownload%2F%40types%2Fscheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
   integrity sha1-GIRSBehv8AOFF6q3oYpiprn3EnU=
 
-"@types/tuya-panel-kit@^4.0.5":
-  version "4.0.5"
-  resolved "https://registry.nlark.com/@types/tuya-panel-kit/download/@types/tuya-panel-kit-4.0.5.tgz#1a165da4bf746d610409c1b74c6a8e5e6105c3de"
-  integrity sha1-GhZdpL90bWEECcG3TGqOXmEFw94=
+"@types/tuya-panel-kit@^4.0.6":
+  version "4.0.6"
+  resolved "https://registry.npmjs.org/@types/tuya-panel-kit/-/tuya-panel-kit-4.0.6.tgz#e0d53205a5ff3d3d92f5e74b76f5830802f7096b"
+  integrity sha512-+jnLOMVwsWiuVY1xo2bgEPRpW9XEAee9OC4KYpSaMuQkZZ6h6tYX3G2BZTbPUzqsSXKFAF/n3G2UusdUZBC4Cg==
   dependencies:
     "@types/react" "*"
     "@types/react-native" "*"

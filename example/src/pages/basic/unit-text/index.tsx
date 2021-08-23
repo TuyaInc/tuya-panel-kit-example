@@ -1,10 +1,10 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import { UnitText } from 'tuya-panel-kit';
 import TuyaRNSvgs from 'tuya-panel-kit/lib/components/iconfont/svg/defaultSvg';
 
-import { ListView } from '@components';
-import Strings from '@i18n';
+import { ListView } from '#components';
+import Strings from '#i18n';
 
 export default () => {
   return (
